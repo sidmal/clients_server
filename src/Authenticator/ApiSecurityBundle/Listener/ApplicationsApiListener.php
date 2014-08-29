@@ -49,22 +49,35 @@ class ApplicationsApiListener implements ListenerInterface
 
         $response = (new Response())->setStatusCode(Response::HTTP_FORBIDDEN);
 
+        if(!$request->attributes->has('application_id')){
+            $event->setResponse(
+                $response->setStatusCode(Response::HTTP_BAD_REQUEST)
+                    ->setContent('Обязательный параметр "application_id" не установлен или URL задан не корректно.')
+            );
+
+            return true;
+        }
+
         $apiSignatureRegexp = '/^ApiToken secretKeyDigest="([^\.]+)", Nonce="([^\.]+)", Created="([^\.]+)"$/';
 
         if(!$request->headers->has($this->getApiHeaderName())
             || 1 !== preg_match($apiSignatureRegexp, $request->headers->get($this->getApiHeaderName()), $matches)){
-            return $event->setResponse(
+            $event->setResponse(
                 $response->setContent('Заголовок с подписью не задан или имеет не корректный формат.')
             );
+
+            return true;
         }
 
         try{
             new \DateTime($matches[3]);
         }
         catch(\Exception $e){
-            return $event->setResponse(
+            $event->setResponse(
                 $response->setContent('Поле "Created" задано не верно или имеет не корректный формат.')
             );
+
+            return true;
         }
 
         $token = new ApiClientToken();
@@ -85,6 +98,8 @@ class ApplicationsApiListener implements ListenerInterface
         }
 
         $event->setResponse($response);
+
+        return true;
     }
 
     /**

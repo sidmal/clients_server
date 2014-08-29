@@ -30,6 +30,12 @@ class ApplicationsUsersApiController extends Controller implements LoggingInterf
      *      name="clients_api_v1_set_account"
      * )
      *
+     * @Route(
+     *      "/clients/api/v1/account/{application_id}",
+     *      requirements={"application_id"="\d+"},
+     *      name="clients_api_v1_set_account_without_slash"
+     * )
+     *
      * @Method({"POST", "PUT"})
      */
     public function setAccountAction(Request $request)
@@ -62,10 +68,24 @@ class ApplicationsUsersApiController extends Controller implements LoggingInterf
      * )
      *
      * @Route(
+     *      "/clients/api/v1/account/personal_data/{application_id}/{account_type}",
+     *      requirements={"application_id"="\d+", "account_type"="\d+"},
+     *      defaults={"account_type"=0},
+     *      name="clients_api_v1_set_account_personal_data_without_slash"
+     * )
+     *
+     * @Route(
      *      "/clients/api/v1/account/personal_data/{application_id}/",
      *      requirements={"application_id"="\d+"},
      *      defaults={"account_type"=0},
-     *      name="clients_api_v1_set_account_personal_data"
+     *      name="clients_api_v1_set_account_personal_data_without_account_type"
+     * )
+     *
+     * @Route(
+     *      "/clients/api/v1/account/personal_data/{application_id}",
+     *      requirements={"application_id"="\d+"},
+     *      defaults={"account_type"=0},
+     *      name="clients_api_v1_set_account_personal_data_without_account_type_without_slash"
      * )
      *
      * @Method({"POST", "PUT"})
@@ -84,6 +104,12 @@ class ApplicationsUsersApiController extends Controller implements LoggingInterf
      *      "/clients/api/v1/account/personal_data/{application_id}/{account_id}/",
      *      requirements={"application_id"="\d+", "account_id"="\d+"},
      *      name="clients_api_v1_get_account_personal_data"
+     * )
+     *
+     * @Route(
+     *      "/clients/api/v1/account/personal_data/{application_id}/{account_id}",
+     *      requirements={"application_id"="\d+", "account_id"="\d+"},
+     *      name="clients_api_v1_get_account_personal_data_without_slash"
      * )
      */
     public function getAccountPersonalData(Request $request, $account_id)
