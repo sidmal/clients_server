@@ -1,0 +1,11 @@
+services:
+    monolog.request.listener:
+        class: Authenticator\ApiSecurityBundle\Logger\LoggerListener
+        arguments: []
+        calls:
+            - ["setLogger", ["@logger"]]
+            - ["setSecurityContext", ["@security.context"]]
+            - ["setLogDir", ["%kernel.logs_dir%/clients_api"]]
+        tags:
+            - { name: kernel.event_listener, event: kernel.terminate, method: onKernelTerminate }
+            - { name: monolog.logger, channel: response }

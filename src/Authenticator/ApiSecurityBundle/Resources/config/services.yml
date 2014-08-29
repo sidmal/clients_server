@@ -1,0 +1,15 @@
+parameters:
+    auth_clients_api_provider: Authenticator\ApiSecurityBundle\Provider\ClientsApiProvider
+    auth_clients_api_listener: Authenticator\ApiSecurityBundle\Listener\ApplicationsApiListener
+    api_header_name: X-Api-Hash
+
+services:
+    auth_clients_api.security.authentication.provider:
+        class: %auth_clients_api_provider%
+        arguments: ["", "%kernel.cache_dir%/security/nonces"]
+
+    auth_clients_api.security.authentication.listener:
+        class: %auth_clients_api_listener%
+        arguments: ["@security.context", "@security.authentication.manager"]
+        calls:
+            - ["setApiHeaderName", [%api_header_name%]]

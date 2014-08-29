@@ -1,0 +1,21 @@
+security:
+    providers:
+        clients_api:
+            entity: { class: Authenticator\ApiSecurityBundle\Entity\Clients }
+
+        in_memory:
+            memory: ~
+
+    firewalls:
+        wsse_secured:
+            pattern: /clients/api/v1/.*
+            stateless: true
+            wsse: true
+            anonymous : true
+
+        dev:
+            pattern: ^/(_(profiler|wdt)|css|images|js)/
+            security: false
+
+        default:
+            anonymous: ~

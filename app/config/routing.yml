@@ -1,0 +1,4 @@
+applications_users_api:
+    resource: "@AuthenticatorApplicationsUsersBundle/Controller/ApplicationsUsersApiController.php"
+    type: annotation
+
