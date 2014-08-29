@@ -52,6 +52,7 @@ class LoggerListener
             [
                 'request_datetime' => (new \DateTime())->format('c'),
                 'request_method' => $event->getRequest()->getMethod(),
+                'request_remote_ip' => $event->getRequest()->getClientIp(),
                 'request_content' => $event->getRequest()->getContent(),
                 'request_query' => $event->getRequest()->getQueryString(),
                 'request_headers' => $event->getRequest()->headers->all(),
