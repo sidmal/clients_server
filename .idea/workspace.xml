@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e9c70488-0b68-4653-94c0-74c8a6dbf7ec" name="Default" comment="initial commit">
+    <list default="true" id="e9c70488-0b68-4653-94c0-74c8a6dbf7ec" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Exception/ApplicationsUsersException.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Helper/JsonContent.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Exception/JsonContentException.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Controller/ApplicationsUsersApiController.php" afterPath="$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Controller/ApplicationsUsersApiController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/Logger/LoggerListener.php" afterPath="$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/Logger/LoggerListener.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -37,19 +41,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ClientsApiProvider.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/Provider/ClientsApiProvider.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="67" selection-start="1428" selection-end="1428" vertical-scroll-proportion="-0.0" vertical-offset="600" max-vertical-offset="1185">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="AppKernel.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="90" selection-start="867" selection-end="903" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="630">
+            <state line="19" column="90" selection-start="867" selection-end="903" vertical-scroll-proportion="-0.0" vertical-offset="285" max-vertical-offset="630">
               <folding />
             </state>
           </provider>
@@ -67,9 +62,20 @@
       <file leaf-file-name="ApplicationsUsersApiController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Controller/ApplicationsUsersApiController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="73" selection-start="569" selection-end="569" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="1170">
+            <state line="45" column="0" selection-start="1436" selection-end="1436" vertical-scroll-proportion="-14.375" vertical-offset="255" max-vertical-offset="1395">
               <folding>
                 <element signature="e#158#218#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JsonContent.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Helper/JsonContent.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="24" selection-start="685" selection-end="685" vertical-scroll-proportion="-12.5" vertical-offset="0" max-vertical-offset="420">
+              <folding>
+                <element signature="e#155#228#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -89,7 +95,7 @@
       <file leaf-file-name="LoggerListener.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/Logger/LoggerListener.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="75" selection-start="1427" selection-end="1427" vertical-scroll-proportion="0.4950495" vertical-offset="485" max-vertical-offset="1170">
+            <state line="62" column="75" selection-start="2051" selection-end="2051" vertical-scroll-proportion="0.75757575" vertical-offset="455" max-vertical-offset="1200">
               <folding>
                 <element signature="e#149#178#0" expanded="true" />
               </folding>
@@ -110,24 +116,6 @@
         <entry file="file://$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Entity/LegalEntityPersonalData.php">
           <provider selected="true" editor-type-id="text-editor">
             <state line="58" column="29" selection-start="1150" selection-end="1150" vertical-scroll-proportion="0.0" vertical-offset="690" max-vertical-offset="16995">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IndividualPersonalData.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Entity/IndividualPersonalData.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="28" selection-start="1079" selection-end="1079" vertical-scroll-proportion="0.0" vertical-offset="870" max-vertical-offset="6195">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Clients.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/Entity/Clients.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="3" selection-start="365" selection-end="391" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="3585">
               <folding />
             </state>
           </provider>
@@ -163,10 +151,14 @@
       <command text="s doctrine:schema:update --force " />
       <command text="s cache:clear" />
       <command text="s clients:api-client:generate_header_hash --secret_key=Ggjdjwo22820jkxkjnkgshKKHhs" />
+      <command text="s cache:clear --env=prod" />
     </commandsHistory>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///dummy.txt" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
@@ -202,6 +194,9 @@
         <option value="$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Entity/LegalEntityPersonalData.php" />
         <option value="$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Entity/ApplicationsUsers.php" />
         <option value="$PROJECT_DIR$/app/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Exception/ApplicationsUsersException.php" />
+        <option value="$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Exception/JsonContentException.php" />
+        <option value="$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Helper/JsonContent.php" />
         <option value="$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Controller/ApplicationsUsersApiController.php" />
         <option value="$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/Logger/LoggerListener.php" />
       </list>
@@ -402,6 +397,58 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Helper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client_server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client_server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Authenticator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ApplicationsUsersBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Exception" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client_server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client_server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Authenticator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ApplicationsUsersBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Entity" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -449,10 +496,6 @@
               <option name="myItemId" value="Authenticator" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ApiSecurityBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -464,97 +507,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Authenticator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ApiSecurityBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Logger" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client_server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client_server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Authenticator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ApiSecurityBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Listener" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client_server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client_server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Authenticator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ApiSecurityBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Entity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client_server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client_server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Authenticator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ApiSecurityBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Command" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -569,6 +522,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="logs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client_server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client_server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="logs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="clients_api" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -658,7 +637,11 @@
       <created>1409302469594</created>
       <updated>1409302469594</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="в логер запросов от удаленных сервисов добавлено сохранение ip-адреса.">
+      <created>1409310307290</created>
+      <updated>1409310307290</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -679,8 +662,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3457189" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48863637" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294702" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.49022803" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -696,36 +679,13 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="в логер запросов от удаленных сервисов добавлено сохранение ip-адреса." />
+    <option name="LAST_COMMIT_MESSAGE" value="в логер запросов от удаленных сервисов добавлено сохранение ip-адреса." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/Entity/Clients.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="3" selection-start="365" selection-end="391" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="3585">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/Token/ApiClientToken.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="20" selection-start="226" selection-end="240" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="1590" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/Factory/AuthApiFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="20" selection-start="1428" selection-end="1428" vertical-scroll-proportion="0.0" vertical-offset="675" max-vertical-offset="825" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/Resources/config/services.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="14" selection-start="607" selection-end="607" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="300">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/security.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="28" selection-start="223" selection-end="223" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="360">
@@ -1000,15 +960,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Controller/ApplicationsUsersApiController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="73" selection-start="569" selection-end="569" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="1170">
-          <folding>
-            <element signature="e#158#218#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/Listener/ApplicationsApiListener.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="68" column="0" selection-start="2246" selection-end="2246" vertical-scroll-proportion="1.6534654" vertical-offset="5" max-vertical-offset="1605">
@@ -1025,9 +976,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/HttpFoundation/Request.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="830" column="20" selection-start="25364" selection-end="25364" vertical-scroll-proportion="0.34851485" vertical-offset="12169" max-vertical-offset="27900">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Exception/JsonContentException.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="62" selection-start="220" selection-end="220" vertical-scroll-proportion="0.14478764" vertical-offset="0" max-vertical-offset="165">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Exception/ApplicationsUsersException.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="52" selection-start="210" selection-end="210" vertical-scroll-proportion="0.15151516" vertical-offset="0" max-vertical-offset="495">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Helper/JsonContent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="24" selection-start="685" selection-end="685" vertical-scroll-proportion="-12.5" vertical-offset="0" max-vertical-offset="420">
+          <folding>
+            <element signature="e#155#228#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Controller/ApplicationsUsersApiController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="0" selection-start="1436" selection-end="1436" vertical-scroll-proportion="-14.375" vertical-offset="255" max-vertical-offset="1395">
+          <folding>
+            <element signature="e#158#218#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/Logger/LoggerListener.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="75" selection-start="1427" selection-end="1427" vertical-scroll-proportion="0.4950495" vertical-offset="485" max-vertical-offset="1170">
+        <state line="62" column="75" selection-start="2051" selection-end="2051" vertical-scroll-proportion="0.75757575" vertical-offset="455" max-vertical-offset="1200">
           <folding>
             <element signature="e#149#178#0" expanded="true" />
           </folding>

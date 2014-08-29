@@ -9,11 +9,14 @@
 namespace Authenticator\ApplicationsUsersBundle\Controller;
 
 use Authenticator\ApiSecurityBundle\Logger\LoggingInterface;
+use Authenticator\ApplicationsUsersBundle\Exception\JsonContentException;
+use Authenticator\ApplicationsUsersBundle\Helper\JsonContent;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
+use Symfony\Component\HttpFoundation\Response;
 
 class ApplicationsUsersApiController extends Controller implements LoggingInterface
 {
@@ -31,6 +34,18 @@ class ApplicationsUsersApiController extends Controller implements LoggingInterf
      */
     public function setAccountAction(Request $request)
     {
+        $response = new Response();
+
+        try{
+            $requestContent = JsonContent::getJsonObject($request);
+        }
+        catch(JsonContentException $e){
+            return $response->setStatusCode(Response::HTTP_BAD_REQUEST)->setContent($e->getMessage());
+        }
+        catch(\Exception $e){
+            return $response->setStatusCode(Response::HTTP_INTERNAL_SERVER_ERROR)->setContent($e->getMessage());
+        }
+
         return new JsonResponse();
     }
 
