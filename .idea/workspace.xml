@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9c70488-0b68-4653-94c0-74c8a6dbf7ec" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Entity/ApplicationsUsers.php" afterPath="$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Entity/ApplicationsUsers.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Controller/ApplicationsUsersApiController.php" afterPath="$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Controller/ApplicationsUsersApiController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/Entity/Clients.php" afterPath="$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/Entity/Clients.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Entity/IndividualPersonalData.php" afterPath="$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Entity/IndividualPersonalData.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Entity/LegalEntityPersonalData.php" afterPath="$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Entity/LegalEntityPersonalData.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/composer.lock" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="client_server.iws" />
@@ -1535,7 +1530,11 @@
       <created>1409330986408</created>
       <updated>1409330986408</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="1. добавлена логика действий в методы API контроллера.&#10;2. исправлены поля БД в entity (добавлены null-поля, уникальные индексы и внешние ключи).&#10;3. добавлены валидаторы в entity.">
+      <created>1409775283739</created>
+      <updated>1409775283739</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1551,6 +1550,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32943144" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.8162252" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -1558,7 +1558,6 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4884106" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294702" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1577,7 +1576,8 @@
     <MESSAGE value="в логер запросов от удаленных сервисов добавлено сохранение ip-адреса." />
     <MESSAGE value="в логер запросов от удаленных сервисов добавлено сохранение сохранение http статусов ответов." />
     <MESSAGE value="1. исправлены роуты всех действий API (введена защита от дурака. как показала практика необходимое действие.)&#10;2. введена проверка наличия параметра application_id в листнере безопасности API методов." />
-    <option name="LAST_COMMIT_MESSAGE" value="1. исправлены роуты всех действий API (введена защита от дурака. как показала практика необходимое действие.)&#10;2. введена проверка наличия параметра application_id в листнере безопасности API методов." />
+    <MESSAGE value="1. добавлена логика действий в методы API контроллера.&#10;2. исправлены поля БД в entity (добавлены null-поля, уникальные индексы и внешние ключи).&#10;3. добавлены валидаторы в entity." />
+    <option name="LAST_COMMIT_MESSAGE" value="1. добавлена логика действий в методы API контроллера.&#10;2. исправлены поля БД в entity (добавлены null-поля, уникальные индексы и внешние ключи).&#10;3. добавлены валидаторы в entity." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1600,7 +1600,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Security/Core/User/UserInterface.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="10" selection-start="1070" selection-end="1070" vertical-scroll-proportion="-0.7013233" vertical-offset="761" max-vertical-offset="1290" />
+        <state line="33" column="10" selection-start="1070" selection-end="1070" vertical-scroll-proportion="-0.7013233" vertical-offset="761" max-vertical-offset="1290">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Authentication/Token/TokenInterface.php">
