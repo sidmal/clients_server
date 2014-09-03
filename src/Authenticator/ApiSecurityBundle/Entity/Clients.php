@@ -60,6 +60,11 @@ class Clients implements UserInterface, EquatableInterface
      */
     private $updatedAt;
 
+    /**
+     * @ORM\OneToMany(targetEntity="Authenticator\ApplicationsUsersBundle\Entity\ApplicationsUsers", mappedBy="applicationId")
+     */
+    private $applicationAccounts;
+
     public function __construct()
     {
         $this->createdAt = $this->updatedAt = new \DateTime();
@@ -229,5 +234,28 @@ class Clients implements UserInterface, EquatableInterface
         }
 
         return true;
+    }
+
+    /**
+     * Add applicationAccounts
+     *
+     * @param \Authenticator\ApplicationsUsersBundle\Entity\ApplicationsUsers $applicationAccounts
+     * @return Clients
+     */
+    public function addApplicationAccount(\Authenticator\ApplicationsUsersBundle\Entity\ApplicationsUsers $applicationAccounts)
+    {
+        $this->applicationAccounts[] = $applicationAccounts;
+
+        return $this;
+    }
+
+    /**
+     * Get applicationAccounts
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getApplicationAccounts()
+    {
+        return $this->applicationAccounts;
     }
 }

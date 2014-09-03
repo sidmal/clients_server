@@ -5,14 +5,26 @@ namespace Authenticator\ApplicationsUsersBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Context\ExecutionContextInterface;
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 
 /**
  * ApplicationsUsers
  *
- * @ORM\Table(name="applications_users")
+ * @ORM\Table(
+ *      name="applications_users",
+ *      uniqueConstraints={
+ *          @ORM\UniqueConstraint(columns={"application_user_id", "application_id"})
+ *      }
+ * )
  * @ORM\Entity
  *
  * @ORM\HasLifecycleCallbacks
+ *
+ * @UniqueEntity(
+ *     fields={"applicationUserId", "applicationId"},
+ *     errorPath="applicationUserId",
+ *     message="Указанный идентификатор пользователя для данного внешнего приложения уже существует."
+ * )
  */
 class ApplicationsUsers
 {
@@ -87,9 +99,7 @@ class ApplicationsUsers
      *
      * @ORM\Column(name="authorisation_type", type="integer")
      *
-     * @Assert\NotBlank(message="Параметр 'authorisation_type' не может быть пуст.")
      * @Assert\NotNull(message="Параметр 'authorisation_type' не может быть равным null.")
-     * @Assert\Type(type="integer", message="Значение параметра 'authorisation_type' имеет не корректный тип данных.")
      * @Assert\Choice(choices = {0, 1}, message = "Значение параметра 'authorisation_type' указано не верно.")
      */
     private $authorisationType;
@@ -121,6 +131,12 @@ class ApplicationsUsers
      * @ORM\Column(name="updated_at", type="datetime")
      */
     private $updatedAt;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="Authenticator\ApiSecurityBundle\Entity\Clients", inversedBy="applicationAccounts")
+     * @ORM\JoinColumn(name="application_id", referencedColumnName="id")
+     */
+    private $applicationId;
 
     /**
      * @ORM\OneToOne(targetEntity="IndividualPersonalData", mappedBy="applicationsUser")
@@ -430,5 +446,28 @@ class ApplicationsUsers
     public function getAccountLegalEntity()
     {
         return $this->accountLegalEntity;
+    }
+
+    /**
+     * Set applicationId
+     *
+     * @param \Authenticator\ApiSecurityBundle\Entity\Clients $applicationId
+     * @return ApplicationsUsers
+     */
+    public function setApplicationId(\Authenticator\ApiSecurityBundle\Entity\Clients $applicationId = null)
+    {
+        $this->applicationId = $applicationId;
+
+        return $this;
+    }
+
+    /**
+     * Get applicationId
+     *
+     * @return \Authenticator\ApiSecurityBundle\Entity\Clients 
+     */
+    public function getApplicationId()
+    {
+        return $this->applicationId;
     }
 }

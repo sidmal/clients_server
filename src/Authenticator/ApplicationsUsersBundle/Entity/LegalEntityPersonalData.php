@@ -3,6 +3,7 @@
 namespace Authenticator\ApplicationsUsersBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * LegalEntityPersonalData
@@ -27,6 +28,14 @@ class LegalEntityPersonalData
      * @var string
      *
      * @ORM\Column(name="organisation_type", type="string", length=255)
+     *
+     * @Assert\NotBlank(message="Параметр 'organisation_type' не может быть пуст.")
+     * @Assert\NotNull(message="Параметр 'organisation_type' не может быть равным null.")
+     * @Assert\Type(type="string", message="Значение параметра 'organisation_type' имеет не корректный тип данных.")
+     * @Assert\Length(
+     *      max=255,
+     *      maxMessage="Значение параметра 'organisation_type' содержит более допустимого количества символов."
+     * )
      */
     private $organisationType;
 
@@ -34,6 +43,10 @@ class LegalEntityPersonalData
      * @var string
      *
      * @ORM\Column(name="organisation_name", type="text")
+     *
+     * @Assert\NotBlank(message="Параметр 'organisation_name' не может быть пуст.")
+     * @Assert\NotNull(message="Параметр 'organisation_name' не может быть равным null.")
+     * @Assert\Type(type="string", message="Значение параметра 'organisation_name' имеет не корректный тип данных.")
      */
     private $organisationName;
 
@@ -41,6 +54,16 @@ class LegalEntityPersonalData
      * @var string
      *
      * @ORM\Column(name="legal_address_zip", type="string", length=6)
+     *
+     * @Assert\NotBlank(message="Параметр 'legal_address->zip' не может быть пуст.")
+     * @Assert\NotNull(message="Параметр 'legal_address->zip' не может быть равным null.")
+     * @Assert\Type(type="string", message="Значение параметра 'legal_address->zip' имеет не корректный тип данных.")
+     * @Assert\Length(
+     *      min=6,
+     *      max=6,
+     *      minMessage="Значение параметра 'legal_address->zip' не может быть меньше 6-и цифр.",
+     *      maxMessage="Значение параметра 'legal_address->zip' не может быть более 6-и цифр."
+     * )
      */
     private $legalAddressZip;
 
@@ -48,6 +71,14 @@ class LegalEntityPersonalData
      * @var string
      *
      * @ORM\Column(name="legal_address_country", type="string", length=255)
+     *
+     * @Assert\NotBlank(message="Параметр 'legal_address->country' не может быть пуст.")
+     * @Assert\NotNull(message="Параметр 'legal_address->country' не может быть равным null.")
+     * @Assert\Type(type="string", message="Значение параметра 'legal_address->country' имеет не корректный тип данных.")
+     * @Assert\Length(
+     *      max=255,
+     *      maxMessage="Параметр 'legal_address->country' имеет не допустимую длину."
+     * )
      */
     private $legalAddressCountry;
 
@@ -55,6 +86,14 @@ class LegalEntityPersonalData
      * @var string
      *
      * @ORM\Column(name="legal_address_state", type="string", length=255)
+     *
+     * @Assert\NotBlank(message="Параметр 'legal_address->state' не может быть пуст.")
+     * @Assert\NotNull(message="Параметр 'legal_address->state' не может быть равным null.")
+     * @Assert\Type(type="string", message="Значение параметра 'legal_address->state' имеет не корректный тип данных.")
+     * @Assert\Length(
+     *      max=255,
+     *      maxMessage="Параметр 'legal_address->state' имеет не допустимую длину."
+     * )
      */
     private $legalAddressState;
 
@@ -62,6 +101,14 @@ class LegalEntityPersonalData
      * @var string
      *
      * @ORM\Column(name="legal_address_city", type="string", length=255)
+     *
+     * @Assert\NotBlank(message="Параметр 'legal_address->city' не может быть пуст.")
+     * @Assert\NotNull(message="Параметр 'legal_address->city' не может быть равным null.")
+     * @Assert\Type(type="string", message="Значение параметра 'legal_address->city' имеет не корректный тип данных.")
+     * @Assert\Length(
+     *      max=255,
+     *      maxMessage="Параметр 'legal_address->city' имеет не допустимую длину."
+     * )
      */
     private $legalAddressCity;
 
@@ -69,6 +116,14 @@ class LegalEntityPersonalData
      * @var string
      *
      * @ORM\Column(name="legal_address_street", type="string", length=255)
+     *
+     * @Assert\NotBlank(message="Параметр 'legal_address->street' не может быть пуст.")
+     * @Assert\NotNull(message="Параметр 'legal_address->street' не может быть равным null.")
+     * @Assert\Type(type="string", message="Значение параметра 'legal_address->street' имеет не корректный тип данных.")
+     * @Assert\Length(
+     *      max=255,
+     *      maxMessage="Параметр 'legal_address->street' имеет не допустимую длину."
+     * )
      */
     private $legalAddressStreet;
 
@@ -76,6 +131,10 @@ class LegalEntityPersonalData
      * @var integer
      *
      * @ORM\Column(name="legal_address_house", type="integer")
+     *
+     * @Assert\NotBlank(message="Параметр 'legal_address->house' не может быть пуст.")
+     * @Assert\NotNull(message="Параметр 'legal_address->house' не может быть равным null.")
+     * @Assert\Type(type="numeric", message="Значение параметра 'legal_address->house' имеет не корректный тип данных.")
      */
     private $legalAddressHouse;
 
@@ -83,6 +142,14 @@ class LegalEntityPersonalData
      * @var string
      *
      * @ORM\Column(name="legal_address_build", type="string", length=255)
+     *
+     * @Assert\NotBlank(message="Параметр 'legal_address->build' не может быть пуст.")
+     * @Assert\NotNull(message="Параметр 'legal_address->build' не может быть равным null.")
+     * @Assert\Type(type="scalar", message="Значение параметра 'legal_address->build' имеет не корректный тип данных.")
+     * @Assert\Length(
+     *      max=255,
+     *      maxMessage="Параметр 'legal_address->build' имеет не допустимую длину."
+     * )
      */
     private $legalAddressBuild;
 
@@ -90,6 +157,14 @@ class LegalEntityPersonalData
      * @var string
      *
      * @ORM\Column(name="legal_address_office", type="string", length=255)
+     *
+     * @Assert\NotBlank(message="Параметр 'legal_address->office' не может быть пуст.")
+     * @Assert\NotNull(message="Параметр 'legal_address->office' не может быть равным null.")
+     * @Assert\Type(type="scalar", message="Значение параметра 'legal_address->office' имеет не корректный тип данных.")
+     * @Assert\Length(
+     *      max=255,
+     *      maxMessage="Параметр 'legal_address->office' имеет не допустимую длину."
+     * )
      */
     private $legalAddressOffice;
 
@@ -97,6 +172,16 @@ class LegalEntityPersonalData
      * @var string
      *
      * @ORM\Column(name="actual_address_zip", type="string", length=6)
+     *
+     * @Assert\NotBlank(message="Параметр 'actual_address->zip' не может быть пуст.")
+     * @Assert\NotNull(message="Параметр 'actual_address->zip' не может быть равным null.")
+     * @Assert\Type(type="string", message="Значение параметра 'actual_address->zip' имеет не корректный тип данных.")
+     * @Assert\Length(
+     *      min=6,
+     *      max=6,
+     *      minMessage="Значение параметра 'actual_address->zip' не может быть меньше 6-и цифр.",
+     *      maxMessage="Значение параметра 'actual_address->zip' не может быть более 6-и цифр."
+     * )
      */
     private $actualAddressZip;
 
@@ -104,6 +189,14 @@ class LegalEntityPersonalData
      * @var string
      *
      * @ORM\Column(name="actual_address_country", type="string", length=255)
+     *
+     * @Assert\NotBlank(message="Параметр 'actual_address->country' не может быть пуст.")
+     * @Assert\NotNull(message="Параметр 'actual_address->country' не может быть равным null.")
+     * @Assert\Type(type="string", message="Значение параметра 'actual_address->country' имеет не корректный тип данных.")
+     * @Assert\Length(
+     *      max=255,
+     *      maxMessage="Параметр 'actual_address->country' имеет не допустимую длину."
+     * )
      */
     private $actualAddressCountry;
 
@@ -111,6 +204,14 @@ class LegalEntityPersonalData
      * @var string
      *
      * @ORM\Column(name="actual_address_state", type="string", length=255)
+     *
+     * @Assert\NotBlank(message="Параметр 'actual_address->state' не может быть пуст.")
+     * @Assert\NotNull(message="Параметр 'actual_address->state' не может быть равным null.")
+     * @Assert\Type(type="string", message="Значение параметра 'actual_address->state' имеет не корректный тип данных.")
+     * @Assert\Length(
+     *      max=255,
+     *      maxMessage="Параметр 'actual_address->state' имеет не допустимую длину."
+     * )
      */
     private $actualAddressState;
 
@@ -118,6 +219,14 @@ class LegalEntityPersonalData
      * @var string
      *
      * @ORM\Column(name="actual_address_city", type="string", length=255)
+     *
+     * @Assert\NotBlank(message="Параметр 'actual_address->city' не может быть пуст.")
+     * @Assert\NotNull(message="Параметр 'actual_address->city' не может быть равным null.")
+     * @Assert\Type(type="string", message="Значение параметра 'actual_address->city' имеет не корректный тип данных.")
+     * @Assert\Length(
+     *      max=255,
+     *      maxMessage="Параметр 'actual_address->city' имеет не допустимую длину."
+     * )
      */
     private $actualAddressCity;
 
@@ -125,6 +234,14 @@ class LegalEntityPersonalData
      * @var string
      *
      * @ORM\Column(name="actual_address_street", type="string", length=255)
+     *
+     * @Assert\NotBlank(message="Параметр 'actual_address->street' не может быть пуст.")
+     * @Assert\NotNull(message="Параметр 'actual_address->street' не может быть равным null.")
+     * @Assert\Type(type="string", message="Значение параметра 'actual_address->street' имеет не корректный тип данных.")
+     * @Assert\Length(
+     *      max=255,
+     *      maxMessage="Параметр 'actual_address->street' имеет не допустимую длину."
+     * )
      */
     private $actualAddressStreet;
 
@@ -132,6 +249,10 @@ class LegalEntityPersonalData
      * @var integer
      *
      * @ORM\Column(name="actual_address_house", type="integer")
+     *
+     * @Assert\NotBlank(message="Параметр 'actual_address->house' не может быть пуст.")
+     * @Assert\NotNull(message="Параметр 'actual_address->house' не может быть равным null.")
+     * @Assert\Type(type="numeric", message="Значение параметра 'actual_address->house' имеет не корректный тип данных.")
      */
     private $actualAddressHouse;
 
@@ -139,6 +260,14 @@ class LegalEntityPersonalData
      * @var string
      *
      * @ORM\Column(name="actual_address_build", type="string", length=255)
+     *
+     * @Assert\NotBlank(message="Параметр 'actual_address->build' не может быть пуст.")
+     * @Assert\NotNull(message="Параметр 'actual_address->build' не может быть равным null.")
+     * @Assert\Type(type="scalar", message="Значение параметра 'actual_address->build' имеет не корректный тип данных.")
+     * @Assert\Length(
+     *      max=255,
+     *      maxMessage="Параметр 'actual_address->build' имеет не допустимую длину."
+     * )
      */
     private $actualAddressBuild;
 
@@ -146,6 +275,14 @@ class LegalEntityPersonalData
      * @var string
      *
      * @ORM\Column(name="actual_address_office", type="string", length=255)
+     *
+     * @Assert\NotBlank(message="Параметр 'actual_address->office' не может быть пуст.")
+     * @Assert\NotNull(message="Параметр 'actual_address->office' не может быть равным null.")
+     * @Assert\Type(type="scalar", message="Значение параметра 'actual_address->office' имеет не корректный тип данных.")
+     * @Assert\Length(
+     *      max=255,
+     *      maxMessage="Параметр 'actual_address->office' имеет не допустимую длину."
+     * )
      */
     private $actualAddressOffice;
 
@@ -153,13 +290,21 @@ class LegalEntityPersonalData
      * @var string
      *
      * @ORM\Column(name="email", type="string", length=255)
+     *
+     * @Assert\NotBlank(message="Параметр 'email' не может быть пуст.")
+     * @Assert\NotNull(message="Параметр 'email' не может быть равным null.")
+     * @Assert\Type(type="string", message="Значение параметра 'email' имеет не корректный тип данных.")
+     * @Assert\Length(
+     *      max=255,
+     *      maxMessage="Параметр 'email' имеет не допустимую длину."
+     * )
      */
     private $email;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="phone", type="string", length=128)
+     * @ORM\Column(name="phone", type="string", length=128, nullable=true)
      */
     private $phone;
 
@@ -167,6 +312,16 @@ class LegalEntityPersonalData
      * @var string
      *
      * @ORM\Column(name="inn", type="string", length=12)
+     *
+     * @Assert\NotBlank(message="Параметр 'inn' не может быть пуст.")
+     * @Assert\NotNull(message="Параметр 'inn' не может быть равным null.")
+     * @Assert\Type(type="string", message="Значение параметра 'inn' имеет не корректный тип данных.")
+     * @Assert\Length(
+     *      min=10,
+     *      max=12,
+     *      minMessage="Параметр 'inn' имеет не допустимую длину.",
+     *      maxMessage="Параметр 'inn' имеет не допустимую длину."
+     * )
      */
     private $inn;
 
@@ -174,6 +329,16 @@ class LegalEntityPersonalData
      * @var string
      *
      * @ORM\Column(name="kpp", type="string", length=9)
+     *
+     * @Assert\NotBlank(message="Параметр 'kpp' не может быть пуст.")
+     * @Assert\NotNull(message="Параметр 'kpp' не может быть равным null.")
+     * @Assert\Type(type="string", message="Значение параметра 'kpp' имеет не корректный тип данных.")
+     * @Assert\Length(
+     *      min=9,
+     *      max=9,
+     *      minMessage="Параметр 'kpp' имеет не допустимую длину.",
+     *      maxMessage="Параметр 'kpp' имеет не допустимую длину."
+     * )
      */
     private $kpp;
 
@@ -181,6 +346,14 @@ class LegalEntityPersonalData
      * @var string
      *
      * @ORM\Column(name="okved", type="string", length=128)
+     *
+     * @Assert\NotBlank(message="Параметр 'okved' не может быть пуст.")
+     * @Assert\NotNull(message="Параметр 'okved' не может быть равным null.")
+     * @Assert\Type(type="string", message="Значение параметра 'okved' имеет не корректный тип данных.")
+     * @Assert\Length(
+     *      max=128,
+     *      maxMessage="Параметр 'okved' имеет не допустимую длину."
+     * )
      */
     private $okved;
 
@@ -188,6 +361,16 @@ class LegalEntityPersonalData
      * @var string
      *
      * @ORM\Column(name="okpo", type="string", length=8)
+     *
+     * @Assert\NotBlank(message="Параметр 'okpo' не может быть пуст.")
+     * @Assert\NotNull(message="Параметр 'okpo' не может быть равным null.")
+     * @Assert\Type(type="string", message="Значение параметра 'okpo' имеет не корректный тип данных.")
+     * @Assert\Length(
+     *      min=8,
+     *      max=8,
+     *      minMessage="Параметр 'okpo' имеет не допустимую длину.",
+     *      maxMessage="Параметр 'okpo' имеет не допустимую длину."
+     * )
      */
     private $okpo;
 
@@ -195,6 +378,14 @@ class LegalEntityPersonalData
      * @var string
      *
      * @ORM\Column(name="bank_name", type="string", length=255)
+     *
+     * @Assert\NotBlank(message="Параметр 'bank->name' не может быть пуст.")
+     * @Assert\NotNull(message="Параметр 'bank->name' не может быть равным null.")
+     * @Assert\Type(type="string", message="Значение параметра 'bank->name' имеет не корректный тип данных.")
+     * @Assert\Length(
+     *      max=255,
+     *      maxMessage="Параметр 'bank->name' имеет не допустимую длину."
+     * )
      */
     private $bankName;
 
@@ -202,6 +393,16 @@ class LegalEntityPersonalData
      * @var string
      *
      * @ORM\Column(name="bank_bik", type="string", length=9)
+     *
+     * @Assert\NotBlank(message="Параметр 'bank->bik' не может быть пуст.")
+     * @Assert\NotNull(message="Параметр 'bank->bik' не может быть равным null.")
+     * @Assert\Type(type="string", message="Значение параметра 'bank->bik' имеет не корректный тип данных.")
+     * @Assert\Length(
+     *      min=9,
+     *      max=9,
+     *      minMessage="Параметр 'bank->bik' имеет не допустимую длину.",
+     *      maxMessage="Параметр 'bank->bik' имеет не допустимую длину."
+     * )
      */
     private $bankBik;
 
@@ -209,6 +410,16 @@ class LegalEntityPersonalData
      * @var string
      *
      * @ORM\Column(name="bank_correspondent_account", type="string", length=20)
+     *
+     * @Assert\NotBlank(message="Параметр 'bank->correspondent_account' не может быть пуст.")
+     * @Assert\NotNull(message="Параметр 'bank->correspondent_account' не может быть равным null.")
+     * @Assert\Type(type="string", message="Значение параметра 'bank->correspondent_account' имеет не корректный тип данных.")
+     * @Assert\Length(
+     *      min=20,
+     *      max=20,
+     *      minMessage="Параметр 'bank->correspondent_account' имеет не допустимую длину.",
+     *      maxMessage="Параметр 'bank->correspondent_account' имеет не допустимую длину."
+     * )
      */
     private $bankCorrespondentAccount;
 
@@ -216,6 +427,16 @@ class LegalEntityPersonalData
      * @var string
      *
      * @ORM\Column(name="bank_checking_account", type="string", length=20)
+     *
+     * @Assert\NotBlank(message="Параметр 'bank->checking_account' не может быть пуст.")
+     * @Assert\NotNull(message="Параметр 'bank->checking_account' не может быть равным null.")
+     * @Assert\Type(type="string", message="Значение параметра 'bank->checking_account' имеет не корректный тип данных.")
+     * @Assert\Length(
+     *      min=20,
+     *      max=20,
+     *      minMessage="Параметр 'bank->checking_account' имеет не допустимую длину.",
+     *      maxMessage="Параметр 'bank->checking_account' имеет не допустимую длину."
+     * )
      */
     private $bankCheckingAccount;
 
@@ -223,6 +444,14 @@ class LegalEntityPersonalData
      * @var string
      *
      * @ORM\Column(name="organisation_head_last_name", type="string", length=255)
+     *
+     * @Assert\NotBlank(message="Параметр 'organisation_head->last_name' не может быть пуст.")
+     * @Assert\NotNull(message="Параметр 'organisation_head->last_name' не может быть равным null.")
+     * @Assert\Type(type="string", message="Значение параметра 'organisation_head->last_name' имеет не корректный тип данных.")
+     * @Assert\Length(
+     *      max=255,
+     *      maxMessage="Параметр 'organisation_head->last_name' имеет не допустимую длину."
+     * )
      */
     private $organisationHeadLastName;
 
@@ -230,13 +459,21 @@ class LegalEntityPersonalData
      * @var string
      *
      * @ORM\Column(name="organisation_head_first_name", type="string", length=255)
+     *
+     * @Assert\NotBlank(message="Параметр 'organisation_head->first_name' не может быть пуст.")
+     * @Assert\NotNull(message="Параметр 'organisation_head->first_name' не может быть равным null.")
+     * @Assert\Type(type="string", message="Значение параметра 'organisation_head->first_name' имеет не корректный тип данных.")
+     * @Assert\Length(
+     *      max=255,
+     *      maxMessage="Параметр 'organisation_head->first_name' имеет не допустимую длину."
+     * )
      */
     private $organisationHeadFirstName;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="organisation_head_middle_name", type="string", length=255)
+     * @ORM\Column(name="organisation_head_middle_name", type="string", length=255, nullable=true)
      */
     private $organisationHeadMiddleName;
 
@@ -244,6 +481,14 @@ class LegalEntityPersonalData
      * @var string
      *
      * @ORM\Column(name="organisation_head_base_activities", type="string", length=255)
+     *
+     * @Assert\NotBlank(message="Параметр 'organisation_head->base_activities' не может быть пуст.")
+     * @Assert\NotNull(message="Параметр 'organisation_head->base_activities' не может быть равным null.")
+     * @Assert\Type(type="string", message="Значение параметра 'organisation_head->base_activities' имеет не корректный тип данных.")
+     * @Assert\Length(
+     *      max=255,
+     *      maxMessage="Параметр 'organisation_head->base_activities' имеет не допустимую длину."
+     * )
      */
     private $organisationHeadBaseActivities;
 
@@ -251,6 +496,14 @@ class LegalEntityPersonalData
      * @var string
      *
      * @ORM\Column(name="organisation_head_post", type="string", length=255)
+     *
+     * @Assert\NotBlank(message="Параметр 'organisation_head->post' не может быть пуст.")
+     * @Assert\NotNull(message="Параметр 'organisation_head->post' не может быть равным null.")
+     * @Assert\Type(type="string", message="Значение параметра 'organisation_head->post' имеет не корректный тип данных.")
+     * @Assert\Length(
+     *      max=255,
+     *      maxMessage="Параметр 'organisation_head->post' имеет не допустимую длину."
+     * )
      */
     private $organisationHeadPost;
 

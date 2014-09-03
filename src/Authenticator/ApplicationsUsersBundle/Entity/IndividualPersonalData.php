@@ -3,6 +3,7 @@
 namespace Authenticator\ApplicationsUsersBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * IndividualPersonalData
@@ -27,6 +28,16 @@ class IndividualPersonalData
      * @var string
      *
      * @ORM\Column(name="last_name", type="string", length=255)
+     *
+     * @Assert\NotBlank(message="Параметр 'last_name' не может быть пуст.")
+     * @Assert\NotNull(message="Параметр 'last_name' не может быть равным null.")
+     * @Assert\Type(type="string", message="Значение параметра 'last_name' имеет не корректный тип данных.")
+     * @Assert\Length(
+     *      min=2,
+     *      max=255,
+     *      minMessage="Значение параметра 'last_name' содержит менее допустимого количества символов.",
+     *      maxMessage="Значение параметра 'last_name' содержит более допустимого количества символов."
+     * )
      */
     private $lastName;
 
@@ -34,13 +45,23 @@ class IndividualPersonalData
      * @var string
      *
      * @ORM\Column(name="first_name", type="string", length=255)
+     *
+     * @Assert\NotBlank(message="Параметр 'first_name' не может быть пуст.")
+     * @Assert\NotNull(message="Параметр 'first_name' не может быть равным null.")
+     * @Assert\Type(type="string", message="Значение параметра 'first_name' имеет не корректный тип данных.")
+     * @Assert\Length(
+     *      min=2,
+     *      max=255,
+     *      minMessage="Значение параметра 'first_name' содержит менее допустимого количества символов.",
+     *      maxMessage="Значение параметра 'first_name' содержит более допустимого количества символов."
+     * )
      */
     private $firstName;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="middle_name", type="string", length=255)
+     * @ORM\Column(name="middle_name", type="string", length=255, nullable=true)
      */
     private $middleName;
 
@@ -48,6 +69,10 @@ class IndividualPersonalData
      * @var \DateTime
      *
      * @ORM\Column(name="birthday", type="date")
+     *
+     * @Assert\NotBlank(message="Параметр 'birthday' не может быть пуст.")
+     * @Assert\NotNull(message="Параметр 'birthday' не может быть равным null.")
+     * @Assert\Date(message="Значение параметра 'birthday' имеет не корректный тип данных.")
      */
     private $birthday;
 
@@ -55,6 +80,16 @@ class IndividualPersonalData
      * @var string
      *
      * @ORM\Column(name="passport_series", type="string", length=4)
+     *
+     * @Assert\NotBlank(message="Параметр 'passport_series' не может быть пуст.")
+     * @Assert\NotNull(message="Параметр 'passport_series' не может быть равным null.")
+     * @Assert\Type(type="string", message="Значение параметра 'passport_series' имеет не корректный тип данных.")
+     * @Assert\Length(
+     *      min=4,
+     *      max=4,
+     *      minMessage="Значение параметра 'passport_series' не может быть меньше 4-х цифр.",
+     *      maxMessage="Значение параметра 'passport_series' не может быть больше 4-х цифр."
+     * )
      */
     private $passportSeries;
 
@@ -62,6 +97,16 @@ class IndividualPersonalData
      * @var string
      *
      * @ORM\Column(name="passport_number", type="string", length=6)
+     *
+     * @Assert\NotBlank(message="Параметр 'passport_number' не может быть пуст.")
+     * @Assert\NotNull(message="Параметр 'passport_number' не может быть равным null.")
+     * @Assert\Type(type="string", message="Значение параметра 'passport_number' имеет не корректный тип данных.")
+     * @Assert\Length(
+     *      min=6,
+     *      max=6,
+     *      minMessage="Значение параметра 'passport_number' не может быть меньше 6-и цифр.",
+     *      maxMessage="Значение параметра 'passport_number' не может быть больше 6-и цифр."
+     * )
      */
     private $passportNumber;
 
@@ -69,6 +114,10 @@ class IndividualPersonalData
      * @var \DateTime
      *
      * @ORM\Column(name="date_of_issue", type="date")
+     *
+     * @Assert\NotBlank(message="Параметр 'date_of_issue' не может быть пуст.")
+     * @Assert\NotNull(message="Параметр 'date_of_issue' не может быть равным null.")
+     * @Assert\Date(message="Значение параметра 'date_of_issue' имеет не корректный тип данных.")
      */
     private $dateOfIssue;
 
@@ -76,6 +125,10 @@ class IndividualPersonalData
      * @var string
      *
      * @ORM\Column(name="place_of_issue", type="text")
+     *
+     * @Assert\NotBlank(message="Параметр 'place_of_issue' не может быть пуст.")
+     * @Assert\NotNull(message="Параметр 'place_of_issue' не может быть равным null.")
+     * @Assert\Type(type="string", message="Значение параметра 'place_of_issue' имеет не корректный тип данных.")
      */
     private $placeOfIssue;
 
@@ -83,6 +136,14 @@ class IndividualPersonalData
      * @var string
      *
      * @ORM\Column(name="contact_phone", type="string", length=128)
+     *
+     * @Assert\NotBlank(message="Параметр 'contact_phone' не может быть пуст.")
+     * @Assert\NotNull(message="Параметр 'contact_phone' не может быть равным null.")
+     * @Assert\Type(type="string", message="Значение параметра 'passport_number' имеет не корректный тип данных.")
+     * @Assert\Length(
+     *      max=128,
+     *      maxMessage="Значение параметра 'contact_phone' превышает допустимую длинну."
+     * )
      */
     private $contactPhone;
 

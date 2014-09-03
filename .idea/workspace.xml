@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e9c70488-0b68-4653-94c0-74c8a6dbf7ec" name="Default" comment="1. исправлены роуты всех действий API (введена защита от дурака. как показала практика необходимое действие.)&#10;2. введена проверка наличия параметра application_id в листнере безопасности API методов.">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/Listener/ApplicationsApiListener.php" afterPath="$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/Listener/ApplicationsApiListener.php" />
+    <list default="true" id="e9c70488-0b68-4653-94c0-74c8a6dbf7ec" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Entity/ApplicationsUsers.php" afterPath="$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Entity/ApplicationsUsers.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Controller/ApplicationsUsersApiController.php" afterPath="$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Controller/ApplicationsUsersApiController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/Entity/Clients.php" afterPath="$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/Entity/Clients.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Entity/IndividualPersonalData.php" afterPath="$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Entity/IndividualPersonalData.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Entity/LegalEntityPersonalData.php" afterPath="$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Entity/LegalEntityPersonalData.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="client_server.iws" />
@@ -38,28 +42,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AppKernel.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="90" selection-start="867" selection-end="903" vertical-scroll-proportion="-0.0" vertical-offset="285" max-vertical-offset="630">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ApplicationsUsers.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Entity/ApplicationsUsers.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="3" selection-start="310" selection-end="310" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="6600">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ApplicationsUsersApiController.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ApplicationsUsersApiController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Controller/ApplicationsUsersApiController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="12" selection-start="1385" selection-end="1385" vertical-scroll-proportion="0.33269963" vertical-offset="425" max-vertical-offset="1785">
+            <state line="136" column="6" selection-start="5240" selection-end="5240" vertical-scroll-proportion="0.041666668" vertical-offset="1966" max-vertical-offset="7290">
               <folding>
                 <element signature="e#158#218#0" expanded="true" />
               </folding>
@@ -67,42 +53,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JsonContent.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Helper/JsonContent.php">
+      <file leaf-file-name="IndividualPersonalData.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Entity/IndividualPersonalData.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="24" selection-start="685" selection-end="685" vertical-scroll-proportion="-12.5" vertical-offset="0" max-vertical-offset="420">
-              <folding>
-                <element signature="e#155#228#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoggerListener.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/Logger/LoggerListener.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="44" selection-start="2151" selection-end="2151" vertical-scroll-proportion="-24.5" vertical-offset="357" max-vertical-offset="1200">
-              <folding>
-                <element signature="e#149#178#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ApplicationsApiListener.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/Listener/ApplicationsApiListener.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="0" selection-start="2577" selection-end="2577" vertical-scroll-proportion="-6.0416665" vertical-offset="845" max-vertical-offset="1830">
+            <state line="5" column="0" selection-start="97" selection-end="151" vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="7110">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routing.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+      <file leaf-file-name="LegalEntityPersonalData.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Entity/LegalEntityPersonalData.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
-              <folding />
+            <state line="147" column="32" selection-start="5389" selection-end="5389" vertical-scroll-proportion="0.16697589" vertical-offset="2115" max-vertical-offset="20790">
+              <folding>
+                <element signature="e#64#96#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -116,16 +82,6 @@
   </component>
   <component name="FrameworkCommandLineHistory">
     <commandsHistory>
-      <command text="s generate:bundle --help" />
-      <command text="s generate:bundle --namespace=Authenticator/ApplicationsClients" />
-      <command text="s generate:bundle --namespace=Authenticator/ApplicationsClients --dir=src" />
-      <command text="s generate:bundle --namespace=Authenticator/ApplicationsClientsBundle --dir=src" />
-      <command text="s generate:bundle --namespace=Authenticator/ApiSecurityBundle --dir=src" />
-      <command text="s doctrine:generate:entities AuthenticatorApiSecurityBundle" />
-      <command text="s cache:clear" />
-      <command text="s doctrine:database:create" />
-      <command text="s doctrine:schema:update --force " />
-      <command text="s clients:api-client:create --help" />
       <command text="s clients:api-client:create --name=Тестовый клиент --secret_key=Ggjdjwo22820jkxkjnkgshKKHhs" />
       <command text="s clients:api-client:create --name=&quot;Тестовый клиент&quot; --secret_key=Ggjdjwo22820jkxkjnkgshKKHhs" />
       <command text="s clients:api-client:generate_header_hash --secret_key=Ggjdjwo22820jkxkjnkgshKKHhs" />
@@ -138,6 +94,19 @@
       <command text="s cache:clear" />
       <command text="s clients:api-client:generate_header_hash --secret_key=Ggjdjwo22820jkxkjnkgshKKHhs" />
       <command text="s cache:clear --env=prod" />
+      <command text="s doctrine:generate:entities AuthenticatorApplicationsUsersBundle" />
+      <command text="s doctrine:generate:entities AuthenticatorApiSecurityBundle" />
+      <command text="s doctrine:schema:update --force" />
+      <command text="s clients:api-client:generate_header_hash --secret_key=Ggjdjwo22820jkxkjnkgshKKHhs" />
+      <command text="s doctrine:schema:update --force" />
+      <command text="s clients:api-client:generate_header_hash --secret_key=Ggjdjwo22820jkxkjnkgshKKHhs" />
+      <command text="s clients:api-client:generate_header_hash --secret_key=Ggjdjwo22820jkxkjnkgshKKHhs\" />
+      <command text="s clients:api-client:generate_header_hash --secret_key=Ggjdjwo22820jkxkjnkgshKKHhs" />
+      <command text="s cache:clear --env=prod" />
+      <command text="s clients:api-client:generate_header_hash --secret_key=Ggjdjwo22820jkxkjnkgshKKHhs" />
+      <command text="s cache:clear --env=prod" />
+      <command text="s clients:api-client:generate_header_hash --secret_key=Ggjdjwo22820jkxkjnkgshKKHhs" />
+      <command text="s doctrine:schema:update --force " />
     </commandsHistory>
   </component>
   <component name="Git.Settings">
@@ -154,14 +123,12 @@
         <option value="$PROJECT_DIR$/src/Authenticator/ApplicationsClientsBundle/Security/ApiAuthenticator.php" />
         <option value="$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/Exception/ApiSecurityException.php" />
         <option value="$PROJECT_DIR$/src/Authenticator/ApplicationsClientsBundle/Security/ApiClientsProvider.php" />
-        <option value="$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/Entity/Clients.php" />
         <option value="$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/DependencyInjection/AuthenticatorApiSecurityExtension.php" />
         <option value="$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/AuthenticatorApiSecurityBundle.php" />
         <option value="$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/Factory/AuthApiFactory.php" />
         <option value="$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/Resources/config/services.yml" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/Token/ApiClientToken.php" />
-        <option value="$PROJECT_DIR$/app/config/security.yml" />
         <option value="$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/Command/CreateApiClientCommand.php" />
         <option value="$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/Tests/AuthenticatorListenerTest.php" />
         <option value="$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/Command/GenerateApiClientHeaderHashCommand.php" />
@@ -174,17 +141,21 @@
         <option value="$PROJECT_DIR$/src/Authenticator/ApplicationsClientsBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/app/config/config_app.yml" />
         <option value="$PROJECT_DIR$/app/logs/clients_api/2014-08-28.log" />
-        <option value="$PROJECT_DIR$/app/AppKernel.php" />
-        <option value="$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Entity/IndividualPersonalData.php" />
-        <option value="$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Entity/LegalEntityPersonalData.php" />
-        <option value="$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Entity/ApplicationsUsers.php" />
         <option value="$PROJECT_DIR$/app/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Exception/ApplicationsUsersException.php" />
         <option value="$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Exception/JsonContentException.php" />
-        <option value="$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Helper/JsonContent.php" />
         <option value="$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/Logger/LoggerListener.php" />
-        <option value="$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Controller/ApplicationsUsersApiController.php" />
         <option value="$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/Listener/ApplicationsApiListener.php" />
+        <option value="$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Helper/JsonContent.php" />
+        <option value="$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/Entity/Clients.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/app/AppKernel.php" />
+        <option value="$PROJECT_DIR$/app/config/security.yml" />
+        <option value="$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Entity/ApplicationsUsers.php" />
+        <option value="/private/var/folders/mn/_k2jw4cx0c9brk9tt0b0wswr0000gn/T/tmpRestClientResponse7466901613402893705.json" />
+        <option value="$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Controller/ApplicationsUsersApiController.php" />
+        <option value="$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Entity/IndividualPersonalData.php" />
+        <option value="$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Entity/LegalEntityPersonalData.php" />
       </list>
     </option>
   </component>
@@ -222,7 +193,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
     <option name="width" value="1280" />
-    <option name="height" value="706" />
+    <option name="height" value="696" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -523,6 +494,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Authenticator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ApiSecurityBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Entity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client_server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client_server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -598,6 +595,879 @@
     <property name="options.searchVisible" value="true" />
     <property name="recentsLimit" value="5" />
   </component>
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://client-server:8888" />
+          <option name="urlPath" value="/clients/api/v1/account/personal_data/1/2/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-Api-Hash" />
+                <option name="value" value="ApiToken secretKeyDigest=&quot;Y2Y1ZGExNmNmYjllN2QwNjI3ODlhZWQzMTY3MWJmNTc2NjQ3MGY1YQ==&quot;, Nonce=&quot;YzQ4N2ZkNTA5ZjNjN2MzOA==&quot;, Created=&quot;2014-09-04T00:10:07+04:00&quot;" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="[{&quot;account_id&quot;:2,&quot;organisation_type&quot;:&quot;\u041e\u041e\u041e&quot;,&quot;organisation_name&quot;:&quot;\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e \u0441 \u043e\u0440\u0433\u0430\u043d\u0438\u0447\u0435\u043d\u043d\u043e\u0439 \u043e\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u0441\u0442\u044c\u044e \&quot;\u0420\u043e\u043c\u0430\u0448\u043a\u0430\&quot;&quot;,&quot;legal_address&quot;:{&quot;zip&quot;:&quot;190000&quot;,&quot;country&quot;:&quot;\u0420\u0424&quot;,&quot;state&quot;:&quot;\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433&quot;,&quot;city&quot;:&quot;\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433&quot;,&quot;street&quot;:&quot;\u041d\u0435\u0432\u0441\u043a\u0438\u0439 \u043f\u0440.&quot;,&quot;house&quot;:1,&quot;build&quot;:1,&quot;office&quot;:1},&quot;actual_address&quot;:{&quot;zip&quot;:&quot;190000&quot;,&quot;country&quot;:&quot;\u0420\u0424&quot;,&quot;state&quot;:&quot;\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433&quot;,&quot;city&quot;:&quot;\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433&quot;,&quot;street&quot;:&quot;\u041d\u0435\u0432\u0441\u043a\u0438\u0439 \u043f\u0440.&quot;,&quot;house&quot;:1,&quot;build&quot;:1,&quot;office&quot;:1},&quot;email&quot;:&quot;some_one@mail.ru&quot;,&quot;phone&quot;:&quot;+7 (812) 1234567&quot;,&quot;inn&quot;:&quot;1234567890&quot;,&quot;kpp&quot;:&quot;123456789&quot;,&quot;okved&quot;:&quot;78.111&quot;,&quot;okpo&quot;:&quot;12345678&quot;,&quot;bank&quot;:{&quot;name&quot;:&quot;\u0421\u0431\u0435\u0440\u0431\u0430\u043d\u043a \u0420\u0424&quot;,&quot;bik&quot;:&quot;044525225&quot;,&quot;correspondent_account&quot;:&quot;30101810400000000225&quot;,&quot;checking_account&quot;:&quot;12345678901234567890&quot;},&quot;organisation_head&quot;:{&quot;last_name&quot;:&quot;\u0418\u0432\u0430\u043d\u043e\u0432&quot;,&quot;first_name&quot;:&quot;\u041f\u0435\u0442\u0440&quot;,&quot;middle_name&quot;:&quot;\u0421\u0438\u0434\u043e\u0440\u043e\u0432\u0438\u0447&quot;,&quot;base_activities&quot;:&quot;\u043d\u0430 \u043e\u0441\u043d\u043e\u0432\u0430\u043d\u0438\u0435 \u0443\u0441\u0442\u0430\u0432\u0430 \u2116 \u043a\u0430\u043a\u043e\u0439-\u0442\u043e \u043e\u0442 \u0442\u0430\u043a\u043e\u0433\u043e-\u0442\u043e \u0447\u0438\u0441\u043b\u0430 \u0438 \u0442.\u0434. \u0438 \u0442.\u043f.&quot;,&quot;post&quot;:&quot;\u0413\u0435\u043d\u0435\u0440\u0430\u043b\u044c\u043d\u044b\u0439 \u0434\u0438\u0440\u0435\u043a\u0442\u043e\u0440&quot;}}]" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://client-server:8888" />
+          <option name="urlPath" value="/clients/api/v1/account/personal_data/1/1/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-Api-Hash" />
+                <option name="value" value="ApiToken secretKeyDigest=&quot;Y2JjNWEzZDNjYzIyYzRlMDM3ZjIyZWQ0YjgzNjJhMjMwYTdiYzRjNQ==&quot;, Nonce=&quot;NzkzYzdlY2YwN2E2MDExMg==&quot;, Created=&quot;2014-09-04T00:09:50+04:00&quot;" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="[{&quot;account_id&quot;:2,&quot;organisation_type&quot;:&quot;\u041e\u041e\u041e&quot;,&quot;organisation_name&quot;:&quot;\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e \u0441 \u043e\u0440\u0433\u0430\u043d\u0438\u0447\u0435\u043d\u043d\u043e\u0439 \u043e\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u0441\u0442\u044c\u044e \&quot;\u0420\u043e\u043c\u0430\u0448\u043a\u0430\&quot;&quot;,&quot;legal_address&quot;:{&quot;zip&quot;:&quot;190000&quot;,&quot;country&quot;:&quot;\u0420\u0424&quot;,&quot;state&quot;:&quot;\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433&quot;,&quot;city&quot;:&quot;\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433&quot;,&quot;street&quot;:&quot;\u041d\u0435\u0432\u0441\u043a\u0438\u0439 \u043f\u0440.&quot;,&quot;house&quot;:1,&quot;build&quot;:1,&quot;office&quot;:1},&quot;actual_address&quot;:{&quot;zip&quot;:&quot;190000&quot;,&quot;country&quot;:&quot;\u0420\u0424&quot;,&quot;state&quot;:&quot;\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433&quot;,&quot;city&quot;:&quot;\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433&quot;,&quot;street&quot;:&quot;\u041d\u0435\u0432\u0441\u043a\u0438\u0439 \u043f\u0440.&quot;,&quot;house&quot;:1,&quot;build&quot;:1,&quot;office&quot;:1},&quot;email&quot;:&quot;some_one@mail.ru&quot;,&quot;phone&quot;:&quot;+7 (812) 1234567&quot;,&quot;inn&quot;:&quot;1234567890&quot;,&quot;kpp&quot;:&quot;123456789&quot;,&quot;okved&quot;:&quot;78.111&quot;,&quot;okpo&quot;:&quot;12345678&quot;,&quot;bank&quot;:{&quot;name&quot;:&quot;\u0421\u0431\u0435\u0440\u0431\u0430\u043d\u043a \u0420\u0424&quot;,&quot;bik&quot;:&quot;044525225&quot;,&quot;correspondent_account&quot;:&quot;30101810400000000225&quot;,&quot;checking_account&quot;:&quot;12345678901234567890&quot;},&quot;organisation_head&quot;:{&quot;last_name&quot;:&quot;\u0418\u0432\u0430\u043d\u043e\u0432&quot;,&quot;first_name&quot;:&quot;\u041f\u0435\u0442\u0440&quot;,&quot;middle_name&quot;:&quot;\u0421\u0438\u0434\u043e\u0440\u043e\u0432\u0438\u0447&quot;,&quot;base_activities&quot;:&quot;\u043d\u0430 \u043e\u0441\u043d\u043e\u0432\u0430\u043d\u0438\u0435 \u0443\u0441\u0442\u0430\u0432\u0430 \u2116 \u043a\u0430\u043a\u043e\u0439-\u0442\u043e \u043e\u0442 \u0442\u0430\u043a\u043e\u0433\u043e-\u0442\u043e \u0447\u0438\u0441\u043b\u0430 \u0438 \u0442.\u0434. \u0438 \u0442.\u043f.&quot;,&quot;post&quot;:&quot;\u0413\u0435\u043d\u0435\u0440\u0430\u043b\u044c\u043d\u044b\u0439 \u0434\u0438\u0440\u0435\u043a\u0442\u043e\u0440&quot;}}]" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://client-server:8888" />
+          <option name="urlPath" value="/clients/api/v1/account/personal_data/1/1/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-Api-Hash" />
+                <option name="value" value="ApiToken secretKeyDigest=&quot;Y2UxN2M5NTNhMTdiNDIyYTI2NjRlNDA4NjU1MjhjOTk0ZTBkYzJhNQ==&quot;, Nonce=&quot;ZDY1YzJkZDhhNDUzNWFmZA==&quot;, Created=&quot;2014-09-04T00:09:19+04:00&quot;" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="[{&quot;account_id&quot;:2,&quot;organisation_type&quot;:&quot;\u041e\u041e\u041e&quot;,&quot;organisation_name&quot;:&quot;\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e \u0441 \u043e\u0440\u0433\u0430\u043d\u0438\u0447\u0435\u043d\u043d\u043e\u0439 \u043e\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u0441\u0442\u044c\u044e \&quot;\u0420\u043e\u043c\u0430\u0448\u043a\u0430\&quot;&quot;,&quot;legal_address&quot;:{&quot;zip&quot;:&quot;190000&quot;,&quot;country&quot;:&quot;\u0420\u0424&quot;,&quot;state&quot;:&quot;\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433&quot;,&quot;city&quot;:&quot;\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433&quot;,&quot;street&quot;:&quot;\u041d\u0435\u0432\u0441\u043a\u0438\u0439 \u043f\u0440.&quot;,&quot;house&quot;:1,&quot;build&quot;:1,&quot;office&quot;:1},&quot;actual_address&quot;:{&quot;zip&quot;:&quot;190000&quot;,&quot;country&quot;:&quot;\u0420\u0424&quot;,&quot;state&quot;:&quot;\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433&quot;,&quot;city&quot;:&quot;\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433&quot;,&quot;street&quot;:&quot;\u041d\u0435\u0432\u0441\u043a\u0438\u0439 \u043f\u0440.&quot;,&quot;house&quot;:1,&quot;build&quot;:1,&quot;office&quot;:1},&quot;email&quot;:&quot;some_one@mail.ru&quot;,&quot;phone&quot;:&quot;+7 (812) 1234567&quot;,&quot;inn&quot;:&quot;1234567890&quot;,&quot;kpp&quot;:&quot;123456789&quot;,&quot;okved&quot;:&quot;78.111&quot;,&quot;okpo&quot;:&quot;12345678&quot;,&quot;bank&quot;:{&quot;name&quot;:&quot;\u0421\u0431\u0435\u0440\u0431\u0430\u043d\u043a \u0420\u0424&quot;,&quot;bik&quot;:&quot;044525225&quot;,&quot;correspondent_account&quot;:&quot;30101810400000000225&quot;,&quot;checking_account&quot;:&quot;12345678901234567890&quot;},&quot;organisation_head&quot;:{&quot;last_name&quot;:&quot;\u0418\u0432\u0430\u043d\u043e\u0432&quot;,&quot;first_name&quot;:&quot;\u041f\u0435\u0442\u0440&quot;,&quot;middle_name&quot;:&quot;\u0421\u0438\u0434\u043e\u0440\u043e\u0432\u0438\u0447&quot;,&quot;base_activities&quot;:&quot;\u043d\u0430 \u043e\u0441\u043d\u043e\u0432\u0430\u043d\u0438\u0435 \u0443\u0441\u0442\u0430\u0432\u0430 \u2116 \u043a\u0430\u043a\u043e\u0439-\u0442\u043e \u043e\u0442 \u0442\u0430\u043a\u043e\u0433\u043e-\u0442\u043e \u0447\u0438\u0441\u043b\u0430 \u0438 \u0442.\u0434. \u0438 \u0442.\u043f.&quot;,&quot;post&quot;:&quot;\u0413\u0435\u043d\u0435\u0440\u0430\u043b\u044c\u043d\u044b\u0439 \u0434\u0438\u0440\u0435\u043a\u0442\u043e\u0440&quot;}}]" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://client-server:8888" />
+          <option name="urlPath" value="/clients/api/v1/account/personal_data/1/1/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-Api-Hash" />
+                <option name="value" value="ApiToken secretKeyDigest=&quot;N2EyMjlkODY1ZjgzZmJhOWQ5NWM1ZDk3NzAwYmRkYzY3NGZjM2U4NA==&quot;, Nonce=&quot;NjZmNjZlZWRiZjk4MTM4MA==&quot;, Created=&quot;2014-09-04T00:08:45+04:00&quot;" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="[{&quot;account_id&quot;:2,&quot;organisation_type&quot;:&quot;\u041e\u041e\u041e&quot;,&quot;organisation_name&quot;:&quot;\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e \u0441 \u043e\u0440\u0433\u0430\u043d\u0438\u0447\u0435\u043d\u043d\u043e\u0439 \u043e\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u0441\u0442\u044c\u044e \&quot;\u0420\u043e\u043c\u0430\u0448\u043a\u0430\&quot;&quot;,&quot;legal_address&quot;:{&quot;zip&quot;:&quot;190000&quot;,&quot;country&quot;:&quot;\u0420\u0424&quot;,&quot;state&quot;:&quot;\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433&quot;,&quot;city&quot;:&quot;\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433&quot;,&quot;street&quot;:&quot;\u041d\u0435\u0432\u0441\u043a\u0438\u0439 \u043f\u0440.&quot;,&quot;house&quot;:1,&quot;build&quot;:1,&quot;office&quot;:1},&quot;actual_address&quot;:{&quot;zip&quot;:&quot;190000&quot;,&quot;country&quot;:&quot;\u0420\u0424&quot;,&quot;state&quot;:&quot;\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433&quot;,&quot;city&quot;:&quot;\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433&quot;,&quot;street&quot;:&quot;\u041d\u0435\u0432\u0441\u043a\u0438\u0439 \u043f\u0440.&quot;,&quot;house&quot;:1,&quot;build&quot;:1,&quot;office&quot;:1},&quot;email&quot;:&quot;some_one@mail.ru&quot;,&quot;phone&quot;:&quot;+7 (812) 1234567&quot;,&quot;inn&quot;:&quot;1234567890&quot;,&quot;kpp&quot;:&quot;123456789&quot;,&quot;okved&quot;:&quot;78.111&quot;,&quot;okpo&quot;:&quot;12345678&quot;,&quot;bank&quot;:{&quot;name&quot;:&quot;\u0421\u0431\u0435\u0440\u0431\u0430\u043d\u043a \u0420\u0424&quot;,&quot;bik&quot;:&quot;044525225&quot;,&quot;correspondent_account&quot;:&quot;30101810400000000225&quot;,&quot;checking_account&quot;:&quot;12345678901234567890&quot;},&quot;organisation_head&quot;:{&quot;last_name&quot;:&quot;\u0418\u0432\u0430\u043d\u043e\u0432&quot;,&quot;first_name&quot;:&quot;\u041f\u0435\u0442\u0440&quot;,&quot;middle_name&quot;:&quot;\u0421\u0438\u0434\u043e\u0440\u043e\u0432\u0438\u0447&quot;,&quot;base_activities&quot;:&quot;\u043d\u0430 \u043e\u0441\u043d\u043e\u0432\u0430\u043d\u0438\u0435 \u0443\u0441\u0442\u0430\u0432\u0430 \u2116 \u043a\u0430\u043a\u043e\u0439-\u0442\u043e \u043e\u0442 \u0442\u0430\u043a\u043e\u0433\u043e-\u0442\u043e \u0447\u0438\u0441\u043b\u0430 \u0438 \u0442.\u0434. \u0438 \u0442.\u043f.&quot;,&quot;post&quot;:&quot;\u0413\u0435\u043d\u0435\u0440\u0430\u043b\u044c\u043d\u044b\u0439 \u0434\u0438\u0440\u0435\u043a\u0442\u043e\u0440&quot;}}]" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://client-server:8888" />
+          <option name="urlPath" value="/clients/api/v1/account/personal_data/1/1/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-Api-Hash" />
+                <option name="value" value="ApiToken secretKeyDigest=&quot;MzFjYzc5MzQzOTYzNjRlZTI1ZTE4NDVhNzRiYzA0MWQ2N2VhNDJlYg==&quot;, Nonce=&quot;NTQ4ODBjYTBlMzg4YzZjZg==&quot;, Created=&quot;2014-09-04T00:06:07+04:00&quot;" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="[{&quot;account_id&quot;:2,&quot;organisation_type&quot;:&quot;\u041e\u041e\u041e&quot;,&quot;organisation_name&quot;:&quot;\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e \u0441 \u043e\u0440\u0433\u0430\u043d\u0438\u0447\u0435\u043d\u043d\u043e\u0439 \u043e\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u0441\u0442\u044c\u044e \&quot;\u0420\u043e\u043c\u0430\u0448\u043a\u0430\&quot;&quot;,&quot;legal_address&quot;:{&quot;zip&quot;:&quot;190000&quot;,&quot;country&quot;:&quot;\u0420\u0424&quot;,&quot;state&quot;:&quot;\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433&quot;,&quot;city&quot;:&quot;\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433&quot;,&quot;street&quot;:&quot;\u041d\u0435\u0432\u0441\u043a\u0438\u0439 \u043f\u0440.&quot;,&quot;house&quot;:1,&quot;build&quot;:1,&quot;office&quot;:1},&quot;actual_address&quot;:{&quot;zip&quot;:&quot;190000&quot;,&quot;country&quot;:&quot;\u0420\u0424&quot;,&quot;state&quot;:&quot;\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433&quot;,&quot;city&quot;:&quot;\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433&quot;,&quot;street&quot;:&quot;\u041d\u0435\u0432\u0441\u043a\u0438\u0439 \u043f\u0440.&quot;,&quot;house&quot;:1,&quot;build&quot;:1,&quot;office&quot;:1},&quot;email&quot;:&quot;some_one@mail.ru&quot;,&quot;phone&quot;:&quot;+7 (812) 1234567&quot;,&quot;inn&quot;:&quot;1234567890&quot;,&quot;kpp&quot;:&quot;123456789&quot;,&quot;okved&quot;:&quot;78.111&quot;,&quot;okpo&quot;:&quot;12345678&quot;,&quot;bank&quot;:{&quot;name&quot;:&quot;\u0421\u0431\u0435\u0440\u0431\u0430\u043d\u043a \u0420\u0424&quot;,&quot;bik&quot;:&quot;044525225&quot;,&quot;correspondent_account&quot;:&quot;30101810400000000225&quot;,&quot;checking_account&quot;:&quot;12345678901234567890&quot;},&quot;organisation_head&quot;:{&quot;last_name&quot;:&quot;\u0418\u0432\u0430\u043d\u043e\u0432&quot;,&quot;first_name&quot;:&quot;\u041f\u0435\u0442\u0440&quot;,&quot;middle_name&quot;:&quot;\u0421\u0438\u0434\u043e\u0440\u043e\u0432\u0438\u0447&quot;,&quot;base_activities&quot;:&quot;\u043d\u0430 \u043e\u0441\u043d\u043e\u0432\u0430\u043d\u0438\u0435 \u0443\u0441\u0442\u0430\u0432\u0430 \u2116 \u043a\u0430\u043a\u043e\u0439-\u0442\u043e \u043e\u0442 \u0442\u0430\u043a\u043e\u0433\u043e-\u0442\u043e \u0447\u0438\u0441\u043b\u0430 \u0438 \u0442.\u0434. \u0438 \u0442.\u043f.&quot;,&quot;post&quot;:&quot;\u0413\u0435\u043d\u0435\u0440\u0430\u043b\u044c\u043d\u044b\u0439 \u0434\u0438\u0440\u0435\u043a\u0442\u043e\u0440&quot;}}]" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://client-server:8888" />
+          <option name="urlPath" value="/clients/api/v1/account/personal_data/1/1/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-Api-Hash" />
+                <option name="value" value="ApiToken secretKeyDigest=&quot;Nzc3NTcwY2M1YTQ3NjIyMWE4NjczY2ZjYWUyZDE3N2Q1ZDlmNjZjYQ==&quot;, Nonce=&quot;ODgxZDg0OTFhYzQ3NWYyNA==&quot;, Created=&quot;2014-09-04T00:05:45+04:00&quot;" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="[{&quot;account_id&quot;:1,&quot;organisation_type&quot;:&quot;\u041e\u041e\u041e&quot;,&quot;organisation_name&quot;:&quot;\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e \u0441 \u043e\u0440\u0433\u0430\u043d\u0438\u0447\u0435\u043d\u043d\u043e\u0439 \u043e\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u0441\u0442\u044c\u044e \&quot;\u0420\u043e\u043c\u0430\u0448\u043a\u0430\&quot;&quot;,&quot;legal_address&quot;:{&quot;zip&quot;:&quot;190000&quot;,&quot;country&quot;:&quot;\u0420\u0424&quot;,&quot;state&quot;:&quot;\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433&quot;,&quot;city&quot;:&quot;\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433&quot;,&quot;street&quot;:&quot;\u041d\u0435\u0432\u0441\u043a\u0438\u0439 \u043f\u0440.&quot;,&quot;house&quot;:1,&quot;build&quot;:1,&quot;office&quot;:1},&quot;actual_address&quot;:{&quot;zip&quot;:&quot;190000&quot;,&quot;country&quot;:&quot;\u0420\u0424&quot;,&quot;state&quot;:&quot;\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433&quot;,&quot;city&quot;:&quot;\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433&quot;,&quot;street&quot;:&quot;\u041d\u0435\u0432\u0441\u043a\u0438\u0439 \u043f\u0440.&quot;,&quot;house&quot;:1,&quot;build&quot;:1,&quot;office&quot;:1},&quot;email&quot;:&quot;some_one@mail.ru&quot;,&quot;phone&quot;:&quot;+7 (812) 1234567&quot;,&quot;inn&quot;:&quot;1234567890&quot;,&quot;kpp&quot;:&quot;123456789&quot;,&quot;okved&quot;:&quot;78.111&quot;,&quot;okpo&quot;:&quot;12345678&quot;,&quot;bank&quot;:{&quot;name&quot;:&quot;\u0421\u0431\u0435\u0440\u0431\u0430\u043d\u043a \u0420\u0424&quot;,&quot;bik&quot;:&quot;044525225&quot;,&quot;correspondent_account&quot;:&quot;30101810400000000225&quot;,&quot;checking_account&quot;:&quot;12345678901234567890&quot;},&quot;organisation_head&quot;:{&quot;last_name&quot;:&quot;\u0418\u0432\u0430\u043d\u043e\u0432&quot;,&quot;first_name&quot;:&quot;\u041f\u0435\u0442\u0440&quot;,&quot;middle_name&quot;:&quot;\u0421\u0438\u0434\u043e\u0440\u043e\u0432\u0438\u0447&quot;,&quot;base_activities&quot;:&quot;\u043d\u0430 \u043e\u0441\u043d\u043e\u0432\u0430\u043d\u0438\u0435 \u0443\u0441\u0442\u0430\u0432\u0430 \u2116 \u043a\u0430\u043a\u043e\u0439-\u0442\u043e \u043e\u0442 \u0442\u0430\u043a\u043e\u0433\u043e-\u0442\u043e \u0447\u0438\u0441\u043b\u0430 \u0438 \u0442.\u0434. \u0438 \u0442.\u043f.&quot;,&quot;post&quot;:&quot;\u0413\u0435\u043d\u0435\u0440\u0430\u043b\u044c\u043d\u044b\u0439 \u0434\u0438\u0440\u0435\u043a\u0442\u043e\u0440&quot;}}]" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://client-server:8888" />
+          <option name="urlPath" value="/clients/api/v1/account/personal_data/1/0/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-Api-Hash" />
+                <option name="value" value="ApiToken secretKeyDigest=&quot;ZmFjOGMyN2FhYTNlMTFlNDllMzg3YWM4YzU3MDMyZTFkOTdlMWNiNA==&quot;, Nonce=&quot;ZDUzZjE1MjRmMzBhNjZmMA==&quot;, Created=&quot;2014-09-04T00:04:52+04:00&quot;" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="[ { &quot;account_id&quot;:1, &quot;last_name&quot;:&quot;Иванов&quot;, &quot;first_name&quot;:&quot;Петр&quot;, &quot;middle_name&quot;:&quot;Сидорович&quot;, &quot;birthday&quot;:&quot;1960-01-01&quot;, &quot;passport_series&quot;:&quot;4005&quot;, &quot;passport_number&quot;:&quot;123456&quot;, &quot;date_of_issue&quot;:&quot;2001-01-01&quot;, &quot;place_of_issue&quot;:&quot; г. Нарьянмар, 15 О/м&quot;, &quot;contact_phone&quot;:&quot;+79211234567&quot; }, { &quot;account_id&quot;:3, &quot;last_name&quot;:&quot; Исмагилов&quot;, &quot;first_name&quot;:&quot; Абдурахман&quot;, &quot;birthday&quot;:&quot;1960-01-01&quot;, &quot;passport_series&quot;:&quot;1003&quot;, &quot;passport_number&quot;:&quot;123456&quot;, &quot;date_of_issue&quot;:&quot;2001-01-01&quot;, &quot;place_of_issue&quot;:&quot; г. Барнаул, 7 О/м&quot;, &quot;contact_phone&quot;:&quot;+79211234567&quot; } ]" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://client-server:8888" />
+          <option name="urlPath" value="/app_dev.php/clients/api/v1/account/personal_data/1/0/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-Api-Hash" />
+                <option name="value" value="ApiToken secretKeyDigest=&quot;YmMwNDEyMGI2YTExNTk0YzA3NGE2ODI3YTI4ZjJhOTQxMGFmMTA2Ng==&quot;, Nonce=&quot;ODYyN2M2Njc0ZTBkNjdjNA==&quot;, Created=&quot;2014-09-04T00:03:18+04:00&quot;" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="[ { &quot;account_id&quot;:1, &quot;last_name&quot;:&quot;Иванов&quot;, &quot;first_name&quot;:&quot;Петр&quot;, &quot;middle_name&quot;:&quot;Сидорович&quot;, &quot;birthday&quot;:&quot;1960-01-01&quot;, &quot;passport_series&quot;:&quot;4005&quot;, &quot;passport_number&quot;:&quot;123456&quot;, &quot;date_of_issue&quot;:&quot;2001-01-01&quot;, &quot;place_of_issue&quot;:&quot; г. Нарьянмар, 15 О/м&quot;, &quot;contact_phone&quot;:&quot;+79211234567&quot; }, { &quot;account_id&quot;:3, &quot;last_name&quot;:&quot; Исмагилов&quot;, &quot;first_name&quot;:&quot; Абдурахман&quot;, &quot;birthday&quot;:&quot;1960-01-01&quot;, &quot;passport_series&quot;:&quot;1003&quot;, &quot;passport_number&quot;:&quot;123456&quot;, &quot;date_of_issue&quot;:&quot;2001-01-01&quot;, &quot;place_of_issue&quot;:&quot; г. Барнаул, 7 О/м&quot;, &quot;contact_phone&quot;:&quot;+79211234567&quot; } ]" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://client-server:8888" />
+          <option name="urlPath" value="/app_dev.php/clients/api/v1/account/personal_data/1/0/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-Api-Hash" />
+                <option name="value" value="ApiToken secretKeyDigest=&quot;ZDhlOTY3OTcxYjljNzZjNTcwNThjODVmMjVjNmY1MzM3MWUwZjc1Mw==&quot;, Nonce=&quot;ZDRjMTQzZWI5YjM5MWQ4MQ==&quot;, Created=&quot;2014-09-04T00:02:28+04:00&quot;" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="[ { &quot;account_id&quot;:1, &quot;last_name&quot;:&quot;Иванов&quot;, &quot;first_name&quot;:&quot;Петр&quot;, &quot;middle_name&quot;:&quot;Сидорович&quot;, &quot;birthday&quot;:&quot;1960-01-01&quot;, &quot;passport_series&quot;:&quot;4005&quot;, &quot;passport_number&quot;:&quot;123456&quot;, &quot;date_of_issue&quot;:&quot;2001-01-01&quot;, &quot;place_of_issue&quot;:&quot; г. Нарьянмар, 15 О/м&quot;, &quot;contact_phone&quot;:&quot;+79211234567&quot; }, { &quot;account_id&quot;:3, &quot;last_name&quot;:&quot; Исмагилов&quot;, &quot;first_name&quot;:&quot; Абдурахман&quot;, &quot;birthday&quot;:&quot;1960-01-01&quot;, &quot;passport_series&quot;:&quot;1003&quot;, &quot;passport_number&quot;:&quot;123456&quot;, &quot;date_of_issue&quot;:&quot;2001-01-01&quot;, &quot;place_of_issue&quot;:&quot; г. Барнаул, 7 О/м&quot;, &quot;contact_phone&quot;:&quot;+79211234567&quot; } ]" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://client-server:8888" />
+          <option name="urlPath" value="/app_dev.php/clients/api/v1/account/personal_data/1/0/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-Api-Hash" />
+                <option name="value" value="ApiToken secretKeyDigest=&quot;Yjc5ZTk5YWQ4ODkzMGI2ZTUwMmQ5YTBmZGU0ODU0OTMwZmNiYzFmNQ==&quot;, Nonce=&quot;OTI4YTMxYmI5NzUzOTAyNQ==&quot;, Created=&quot;2014-09-04T00:01:08+04:00&quot;" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="[ { &quot;account_id&quot;:1, &quot;last_name&quot;:&quot;Иванов&quot;, &quot;first_name&quot;:&quot;Петр&quot;, &quot;middle_name&quot;:&quot;Сидорович&quot;, &quot;birthday&quot;:&quot;1960-01-01&quot;, &quot;passport_series&quot;:&quot;4005&quot;, &quot;passport_number&quot;:&quot;123456&quot;, &quot;date_of_issue&quot;:&quot;2001-01-01&quot;, &quot;place_of_issue&quot;:&quot; г. Нарьянмар, 15 О/м&quot;, &quot;contact_phone&quot;:&quot;+79211234567&quot; }, { &quot;account_id&quot;:3, &quot;last_name&quot;:&quot; Исмагилов&quot;, &quot;first_name&quot;:&quot; Абдурахман&quot;, &quot;birthday&quot;:&quot;1960-01-01&quot;, &quot;passport_series&quot;:&quot;1003&quot;, &quot;passport_number&quot;:&quot;123456&quot;, &quot;date_of_issue&quot;:&quot;2001-01-01&quot;, &quot;place_of_issue&quot;:&quot; г. Барнаул, 7 О/м&quot;, &quot;contact_phone&quot;:&quot;+79211234567&quot; } ]" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://client-server:8888" />
+          <option name="urlPath" value="/app_dev.php/clients/api/v1/account/personal_data/1/0/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-Api-Hash" />
+                <option name="value" value="ApiToken secretKeyDigest=&quot;YjgxYjczZGFjODI2YjgxZmQ3Zjk0MzRmM2FkNDM4OTg1ZWFhNzYzZA==&quot;, Nonce=&quot;NTgyN2E3Yzg3MjI2NzJjZA==&quot;, Created=&quot;2014-09-04T00:00:24+04:00&quot;" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="[ { &quot;account_id&quot;:1, &quot;last_name&quot;:&quot;Иванов&quot;, &quot;first_name&quot;:&quot;Петр&quot;, &quot;middle_name&quot;:&quot;Сидорович&quot;, &quot;birthday&quot;:&quot;1960-01-01&quot;, &quot;passport_series&quot;:&quot;4005&quot;, &quot;passport_number&quot;:&quot;123456&quot;, &quot;date_of_issue&quot;:&quot;2001-01-01&quot;, &quot;place_of_issue&quot;:&quot; г. Нарьянмар, 15 О/м&quot;, &quot;contact_phone&quot;:&quot;+79211234567&quot; }, { &quot;account_id&quot;:3, &quot;last_name&quot;:&quot; Исмагилов&quot;, &quot;first_name&quot;:&quot; Абдурахман&quot;, &quot;birthday&quot;:&quot;1960-01-01&quot;, &quot;passport_series&quot;:&quot;1003&quot;, &quot;passport_number&quot;:&quot;123456&quot;, &quot;date_of_issue&quot;:&quot;2001-01-01&quot;, &quot;place_of_issue&quot;:&quot; г. Барнаул, 7 О/м&quot;, &quot;contact_phone&quot;:&quot;+79211234567&quot; } ]" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://client-server:8888" />
+          <option name="urlPath" value="app_dev.php/clients/api/v1/account/personal_data/1/0/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-Api-Hash" />
+                <option name="value" value="ApiToken secretKeyDigest=&quot;NGQ3MWY5ZDFmMzhhMDFmN2M2OGQ5OThlMDVhMjg1NTZkZjVlN2Q4Nw==&quot;, Nonce=&quot;MWVjYzBmYWE2Yzc3NjBmMA==&quot;, Created=&quot;2014-09-03T23:59:58+04:00&quot;" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="[ { &quot;account_id&quot;:1, &quot;last_name&quot;:&quot;Иванов&quot;, &quot;first_name&quot;:&quot;Петр&quot;, &quot;middle_name&quot;:&quot;Сидорович&quot;, &quot;birthday&quot;:&quot;1960-01-01&quot;, &quot;passport_series&quot;:&quot;4005&quot;, &quot;passport_number&quot;:&quot;123456&quot;, &quot;date_of_issue&quot;:&quot;2001-01-01&quot;, &quot;place_of_issue&quot;:&quot; г. Нарьянмар, 15 О/м&quot;, &quot;contact_phone&quot;:&quot;+79211234567&quot; }, { &quot;account_id&quot;:3, &quot;last_name&quot;:&quot; Исмагилов&quot;, &quot;first_name&quot;:&quot; Абдурахман&quot;, &quot;birthday&quot;:&quot;1960-01-01&quot;, &quot;passport_series&quot;:&quot;1003&quot;, &quot;passport_number&quot;:&quot;123456&quot;, &quot;date_of_issue&quot;:&quot;2001-01-01&quot;, &quot;place_of_issue&quot;:&quot; г. Барнаул, 7 О/м&quot;, &quot;contact_phone&quot;:&quot;+79211234567&quot; } ]" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://client-server:8888" />
+          <option name="urlPath" value="/clients/api/v1/account/personal_data/1/0/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-Api-Hash" />
+                <option name="value" value="ApiToken secretKeyDigest=&quot;OTVkMmM5MjZiODZkYjA1NDNhODJlNjc5MTdlNDc3ZmRiOTlhNTM1ZQ==&quot;, Nonce=&quot;OWUwNDE5Y2E0N2M2NzhhZQ==&quot;, Created=&quot;2014-09-03T23:58:52+04:00&quot;" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="[ { &quot;account_id&quot;:1, &quot;last_name&quot;:&quot;Иванов&quot;, &quot;first_name&quot;:&quot;Петр&quot;, &quot;middle_name&quot;:&quot;Сидорович&quot;, &quot;birthday&quot;:&quot;1960-01-01&quot;, &quot;passport_series&quot;:&quot;4005&quot;, &quot;passport_number&quot;:&quot;123456&quot;, &quot;date_of_issue&quot;:&quot;2001-01-01&quot;, &quot;place_of_issue&quot;:&quot; г. Нарьянмар, 15 О/м&quot;, &quot;contact_phone&quot;:&quot;+79211234567&quot; }, { &quot;account_id&quot;:3, &quot;last_name&quot;:&quot; Исмагилов&quot;, &quot;first_name&quot;:&quot; Абдурахман&quot;, &quot;birthday&quot;:&quot;1960-01-01&quot;, &quot;passport_series&quot;:&quot;1003&quot;, &quot;passport_number&quot;:&quot;123456&quot;, &quot;date_of_issue&quot;:&quot;2001-01-01&quot;, &quot;place_of_issue&quot;:&quot; г. Барнаул, 7 О/м&quot;, &quot;contact_phone&quot;:&quot;+79211234567&quot; } ]" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://client-server:8888" />
+          <option name="urlPath" value="/clients/api/v1/account/personal_data/1/0/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-Api-Hash" />
+                <option name="value" value="ApiToken secretKeyDigest=&quot;MmM5YzA3NTE0OTQ1NDI4ZjVlZmRkODVmZWMxMWQwMmQ0MzY0NzE5Yw==&quot;, Nonce=&quot;N2U2MWIzYTZiNDJhOTgxMA==&quot;, Created=&quot;2014-09-03T23:57:00+04:00&quot;" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="[ { &quot;account_id&quot;:1, &quot;last_name&quot;:&quot;Иванов&quot;, &quot;first_name&quot;:&quot;Петр&quot;, &quot;middle_name&quot;:&quot;Сидорович&quot;, &quot;birthday&quot;:&quot;1960-01-01&quot;, &quot;passport_series&quot;:&quot;4005&quot;, &quot;passport_number&quot;:&quot;123456&quot;, &quot;date_of_issue&quot;:&quot;2001-01-01&quot;, &quot;place_of_issue&quot;:&quot; г. Нарьянмар, 15 О/м&quot;, &quot;contact_phone&quot;:&quot;+79211234567&quot; }, { &quot;account_id&quot;:3, &quot;last_name&quot;:&quot; Исмагилов&quot;, &quot;first_name&quot;:&quot; Абдурахман&quot;, &quot;birthday&quot;:&quot;1960-01-01&quot;, &quot;passport_series&quot;:&quot;1003&quot;, &quot;passport_number&quot;:&quot;123456&quot;, &quot;date_of_issue&quot;:&quot;2001-01-01&quot;, &quot;place_of_issue&quot;:&quot; г. Барнаул, 7 О/м&quot;, &quot;contact_phone&quot;:&quot;+79211234567&quot; } ]" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://client-server:8888" />
+          <option name="urlPath" value="/clients/api/v1/account/personal_data/1/0/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-Api-Hash" />
+                <option name="value" value="ApiToken secretKeyDigest=&quot;MGExNDVmMWI2NWUxZDFjN2EyNTRiYmM4MTEwODc1M2Y5YzA1YTFlZQ==&quot;, Nonce=&quot;NzcwNjY1NWY4MTk3ZDEwZQ==&quot;, Created=&quot;2014-09-03T22:04:00+04:00&quot;" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="[ { &quot;account_id&quot;:1, &quot;last_name&quot;:&quot;Иванов&quot;, &quot;first_name&quot;:&quot;Петр&quot;, &quot;middle_name&quot;:&quot;Сидорович&quot;, &quot;birthday&quot;:&quot;1960-01-01&quot;, &quot;passport_series&quot;:&quot;4005&quot;, &quot;passport_number&quot;:&quot;123456&quot;, &quot;date_of_issue&quot;:&quot;2001-01-01&quot;, &quot;place_of_issue&quot;:&quot; г. Нарьянмар, 15 О/м&quot;, &quot;contact_phone&quot;:&quot;+79211234567&quot; }, { &quot;account_id&quot;:3, &quot;last_name&quot;:&quot; Исмагилов&quot;, &quot;first_name&quot;:&quot; Абдурахман&quot;, &quot;birthday&quot;:&quot;1960-01-01&quot;, &quot;passport_series&quot;:&quot;1003&quot;, &quot;passport_number&quot;:&quot;123456&quot;, &quot;date_of_issue&quot;:&quot;2001-01-01&quot;, &quot;place_of_issue&quot;:&quot; г. Барнаул, 7 О/м&quot;, &quot;contact_phone&quot;:&quot;+79211234567&quot; } ]" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://client-server:8888" />
+          <option name="urlPath" value="/clients/api/v1/account/personal_data/1/2/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-Api-Hash" />
+                <option name="value" value="ApiToken secretKeyDigest=&quot;MGExNDVmMWI2NWUxZDFjN2EyNTRiYmM4MTEwODc1M2Y5YzA1YTFlZQ==&quot;, Nonce=&quot;NzcwNjY1NWY4MTk3ZDEwZQ==&quot;, Created=&quot;2014-09-03T22:04:00+04:00&quot;" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="[ { &quot;account_id&quot;:1, &quot;last_name&quot;:&quot;Иванов&quot;, &quot;first_name&quot;:&quot;Петр&quot;, &quot;middle_name&quot;:&quot;Сидорович&quot;, &quot;birthday&quot;:&quot;1960-01-01&quot;, &quot;passport_series&quot;:&quot;4005&quot;, &quot;passport_number&quot;:&quot;123456&quot;, &quot;date_of_issue&quot;:&quot;2001-01-01&quot;, &quot;place_of_issue&quot;:&quot; г. Нарьянмар, 15 О/м&quot;, &quot;contact_phone&quot;:&quot;+79211234567&quot; }, { &quot;account_id&quot;:3, &quot;last_name&quot;:&quot; Исмагилов&quot;, &quot;first_name&quot;:&quot; Абдурахман&quot;, &quot;birthday&quot;:&quot;1960-01-01&quot;, &quot;passport_series&quot;:&quot;1003&quot;, &quot;passport_number&quot;:&quot;123456&quot;, &quot;date_of_issue&quot;:&quot;2001-01-01&quot;, &quot;place_of_issue&quot;:&quot; г. Барнаул, 7 О/м&quot;, &quot;contact_phone&quot;:&quot;+79211234567&quot; } ]" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://client-server:8888" />
+          <option name="urlPath" value="/clients/api/v1/account/personal_data/1/2/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-Api-Hash" />
+                <option name="value" value="ApiToken secretKeyDigest=&quot;ZmZlYjlkMDM0ODZhM2JiMGY5NjE1YWE2OTYyZDUzMzFmYzAzYzNhZg==&quot;, Nonce=&quot;N2M5MmUyMDNhNWY2ZTVkZQ==&quot;, Created=&quot;2014-09-03T22:03:13+04:00&quot;" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="[ { &quot;account_id&quot;:1, &quot;last_name&quot;:&quot;Иванов&quot;, &quot;first_name&quot;:&quot;Петр&quot;, &quot;middle_name&quot;:&quot;Сидорович&quot;, &quot;birthday&quot;:&quot;1960-01-01&quot;, &quot;passport_series&quot;:&quot;4005&quot;, &quot;passport_number&quot;:&quot;123456&quot;, &quot;date_of_issue&quot;:&quot;2001-01-01&quot;, &quot;place_of_issue&quot;:&quot; г. Нарьянмар, 15 О/м&quot;, &quot;contact_phone&quot;:&quot;+79211234567&quot; }, { &quot;account_id&quot;:3, &quot;last_name&quot;:&quot; Исмагилов&quot;, &quot;first_name&quot;:&quot; Абдурахман&quot;, &quot;birthday&quot;:&quot;1960-01-01&quot;, &quot;passport_series&quot;:&quot;1003&quot;, &quot;passport_number&quot;:&quot;123456&quot;, &quot;date_of_issue&quot;:&quot;2001-01-01&quot;, &quot;place_of_issue&quot;:&quot; г. Барнаул, 7 О/м&quot;, &quot;contact_phone&quot;:&quot;+79211234567&quot; } ]" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://client-server:8888" />
+          <option name="urlPath" value="/clients/api/v1/account/personal_data/1/3/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-Api-Hash" />
+                <option name="value" value="ApiToken secretKeyDigest=&quot;ZDRjYjZhNDZkYmM1MGY4MjViNDkzZmZiODU5Y2IyMzQ2ZDE1ODY0OQ==&quot;, Nonce=&quot;ZDI0NzM4ZjJlOTE5MzY5ZA==&quot;, Created=&quot;2014-09-03T22:02:17+04:00&quot;" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="[ { &quot;account_id&quot;:1, &quot;last_name&quot;:&quot;Иванов&quot;, &quot;first_name&quot;:&quot;Петр&quot;, &quot;middle_name&quot;:&quot;Сидорович&quot;, &quot;birthday&quot;:&quot;1960-01-01&quot;, &quot;passport_series&quot;:&quot;4005&quot;, &quot;passport_number&quot;:&quot;123456&quot;, &quot;date_of_issue&quot;:&quot;2001-01-01&quot;, &quot;place_of_issue&quot;:&quot; г. Нарьянмар, 15 О/м&quot;, &quot;contact_phone&quot;:&quot;+79211234567&quot; }, { &quot;account_id&quot;:3, &quot;last_name&quot;:&quot; Исмагилов&quot;, &quot;first_name&quot;:&quot; Абдурахман&quot;, &quot;birthday&quot;:&quot;1960-01-01&quot;, &quot;passport_series&quot;:&quot;1003&quot;, &quot;passport_number&quot;:&quot;123456&quot;, &quot;date_of_issue&quot;:&quot;2001-01-01&quot;, &quot;place_of_issue&quot;:&quot; г. Барнаул, 7 О/м&quot;, &quot;contact_phone&quot;:&quot;+79211234567&quot; } ]" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://client-server:8888" />
+          <option name="urlPath" value="/clients/api/v1/account/personal_data/1/11/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-Api-Hash" />
+                <option name="value" value="ApiToken secretKeyDigest=&quot;NDM1YjNkNGU4YzU1Zjc3ZDAwNGY3NDAzM2NlZTJmMTA5MTQwNTMwNw==&quot;, Nonce=&quot;YWY0MzkxNjRkYjIxMTdjMA==&quot;, Created=&quot;2014-09-03T22:01:21+04:00&quot;" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="[ { &quot;account_id&quot;:1, &quot;last_name&quot;:&quot;Иванов&quot;, &quot;first_name&quot;:&quot;Петр&quot;, &quot;middle_name&quot;:&quot;Сидорович&quot;, &quot;birthday&quot;:&quot;1960-01-01&quot;, &quot;passport_series&quot;:&quot;4005&quot;, &quot;passport_number&quot;:&quot;123456&quot;, &quot;date_of_issue&quot;:&quot;2001-01-01&quot;, &quot;place_of_issue&quot;:&quot; г. Нарьянмар, 15 О/м&quot;, &quot;contact_phone&quot;:&quot;+79211234567&quot; }, { &quot;account_id&quot;:3, &quot;last_name&quot;:&quot; Исмагилов&quot;, &quot;first_name&quot;:&quot; Абдурахман&quot;, &quot;birthday&quot;:&quot;1960-01-01&quot;, &quot;passport_series&quot;:&quot;1003&quot;, &quot;passport_number&quot;:&quot;123456&quot;, &quot;date_of_issue&quot;:&quot;2001-01-01&quot;, &quot;place_of_issue&quot;:&quot; г. Барнаул, 7 О/м&quot;, &quot;contact_phone&quot;:&quot;+79211234567&quot; } ]" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://client-server:8888" />
+          <option name="urlPath" value="/clients/api/v1/account/personal_data/1/11/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-Api-Hash" />
+                <option name="value" value="ApiToken secretKeyDigest=&quot;OGYwYjFhNTkyOWEyNjY5NzgwZTk2ZDcwMjRjYjQ5YTQxZDM1ZmNmMQ==&quot;, Nonce=&quot;ODgxMjZlYTllMGE3NDBhMA==&quot;, Created=&quot;2014-09-03T22:01:05+04:00&quot;" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="[ { &quot;account_id&quot;:1, &quot;last_name&quot;:&quot;Иванов&quot;, &quot;first_name&quot;:&quot;Петр&quot;, &quot;middle_name&quot;:&quot;Сидорович&quot;, &quot;birthday&quot;:&quot;1960-01-01&quot;, &quot;passport_series&quot;:&quot;4005&quot;, &quot;passport_number&quot;:&quot;123456&quot;, &quot;date_of_issue&quot;:&quot;2001-01-01&quot;, &quot;place_of_issue&quot;:&quot; г. Нарьянмар, 15 О/м&quot;, &quot;contact_phone&quot;:&quot;+79211234567&quot; }, { &quot;account_id&quot;:3, &quot;last_name&quot;:&quot; Исмагилов&quot;, &quot;first_name&quot;:&quot; Абдурахман&quot;, &quot;birthday&quot;:&quot;1960-01-01&quot;, &quot;passport_series&quot;:&quot;1003&quot;, &quot;passport_number&quot;:&quot;123456&quot;, &quot;date_of_issue&quot;:&quot;2001-01-01&quot;, &quot;place_of_issue&quot;:&quot; г. Барнаул, 7 О/м&quot;, &quot;contact_phone&quot;:&quot;+79211234567&quot; } ]" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://client-server:8888" />
+          <option name="urlPath" value="/clients/api/v1/account/personal_data/1/11/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-Api-Hash" />
+                <option name="value" value="ApiToken secretKeyDigest=&quot;YWM0MzVmZGUzODY5MjkzMWJjMjBhYWU1OTk2ZDMyNWJlZDMyMTM1NQ==&quot;, Nonce=&quot;MjVlOGViZjU2ZmNhNDBlYg==&quot;, Created=&quot;2014-09-03T22:00:35+04:00&quot;" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="[ { &quot;account_id&quot;:1, &quot;last_name&quot;:&quot;Иванов&quot;, &quot;first_name&quot;:&quot;Петр&quot;, &quot;middle_name&quot;:&quot;Сидорович&quot;, &quot;birthday&quot;:&quot;1960-01-01&quot;, &quot;passport_series&quot;:&quot;4005&quot;, &quot;passport_number&quot;:&quot;123456&quot;, &quot;date_of_issue&quot;:&quot;2001-01-01&quot;, &quot;place_of_issue&quot;:&quot; г. Нарьянмар, 15 О/м&quot;, &quot;contact_phone&quot;:&quot;+79211234567&quot; }, { &quot;account_id&quot;:3, &quot;last_name&quot;:&quot; Исмагилов&quot;, &quot;first_name&quot;:&quot; Абдурахман&quot;, &quot;birthday&quot;:&quot;1960-01-01&quot;, &quot;passport_series&quot;:&quot;1003&quot;, &quot;passport_number&quot;:&quot;123456&quot;, &quot;date_of_issue&quot;:&quot;2001-01-01&quot;, &quot;place_of_issue&quot;:&quot; г. Барнаул, 7 О/м&quot;, &quot;contact_phone&quot;:&quot;+79211234567&quot; } ]" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://client-server:8888" />
+          <option name="urlPath" value="/clients/api/v1/account/personal_data/1/11/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-Api-Hash" />
+                <option name="value" value="ApiToken secretKeyDigest=&quot;YWM0MzVmZGUzODY5MjkzMWJjMjBhYWU1OTk2ZDMyNWJlZDMyMTM1NQ==&quot;, Nonce=&quot;MjVlOGViZjU2ZmNhNDBlYg==&quot;, Created=&quot;2014-09-03T22:00:35+04:00&quot;" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="[ { &quot;account_id&quot;:1, &quot;last_name&quot;:&quot;Иванов&quot;, &quot;first_name&quot;:&quot;Петр&quot;, &quot;middle_name&quot;:&quot;Сидорович&quot;, &quot;birthday&quot;:&quot;1960-01-01&quot;, &quot;passport_series&quot;:&quot;4005&quot;, &quot;passport_number&quot;:&quot;123456&quot;, &quot;date_of_issue&quot;:&quot;2001-01-01&quot;, &quot;place_of_issue&quot;:&quot; г. Нарьянмар, 15 О/м&quot;, &quot;contact_phone&quot;:&quot;+79211234567&quot; }, { &quot;account_id&quot;:3, &quot;last_name&quot;:&quot; Исмагилов&quot;, &quot;first_name&quot;:&quot; Абдурахман&quot;, &quot;birthday&quot;:&quot;1960-01-01&quot;, &quot;passport_series&quot;:&quot;1003&quot;, &quot;passport_number&quot;:&quot;123456&quot;, &quot;date_of_issue&quot;:&quot;2001-01-01&quot;, &quot;place_of_issue&quot;:&quot; г. Барнаул, 7 О/м&quot;, &quot;contact_phone&quot;:&quot;+79211234567&quot; } ]" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://client-server:8888" />
+          <option name="urlPath" value="app_dev.php/clients/api/v1/account/personal_data/1/0/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-Api-Hash" />
+                <option name="value" value="ApiToken secretKeyDigest=&quot;Nzg3OGI4NzZhMTY3ZTc0YjMxNDY0YTViNGQ1NzgzOTEwZTBjNjQ4Mg==&quot;, Nonce=&quot;NmEyMDZhMzIxYWVmMzE3OQ==&quot;, Created=&quot;2014-09-03T21:57:15+04:00&quot;" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="[ { &quot;account_id&quot;:1, &quot;last_name&quot;:&quot;Иванов&quot;, &quot;first_name&quot;:&quot;Петр&quot;, &quot;middle_name&quot;:&quot;Сидорович&quot;, &quot;birthday&quot;:&quot;1960-01-01&quot;, &quot;passport_series&quot;:&quot;4005&quot;, &quot;passport_number&quot;:&quot;123456&quot;, &quot;date_of_issue&quot;:&quot;2001-01-01&quot;, &quot;place_of_issue&quot;:&quot; г. Нарьянмар, 15 О/м&quot;, &quot;contact_phone&quot;:&quot;+79211234567&quot; }, { &quot;account_id&quot;:3, &quot;last_name&quot;:&quot; Исмагилов&quot;, &quot;first_name&quot;:&quot; Абдурахман&quot;, &quot;birthday&quot;:&quot;1960-01-01&quot;, &quot;passport_series&quot;:&quot;1003&quot;, &quot;passport_number&quot;:&quot;123456&quot;, &quot;date_of_issue&quot;:&quot;2001-01-01&quot;, &quot;place_of_issue&quot;:&quot; г. Барнаул, 7 О/м&quot;, &quot;contact_phone&quot;:&quot;+79211234567&quot; } ]" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://client-server:8888" />
+          <option name="urlPath" value="app_dev.php/clients/api/v1/account/personal_data/1/1/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-Api-Hash" />
+                <option name="value" value="ApiToken secretKeyDigest=&quot;ZmNhMWZlYzVkZTc5ZjBhNTRhNDBjYWU0MWI1ZGY0YzU1OGRiMDliNw==&quot;, Nonce=&quot;ZmU5MzAwNDg5YjNiMDUxMw==&quot;, Created=&quot;2014-09-03T21:56:59+04:00&quot;" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="[ { &quot;account_id&quot;:1, &quot;last_name&quot;:&quot;Иванов&quot;, &quot;first_name&quot;:&quot;Петр&quot;, &quot;middle_name&quot;:&quot;Сидорович&quot;, &quot;birthday&quot;:&quot;1960-01-01&quot;, &quot;passport_series&quot;:&quot;4005&quot;, &quot;passport_number&quot;:&quot;123456&quot;, &quot;date_of_issue&quot;:&quot;2001-01-01&quot;, &quot;place_of_issue&quot;:&quot; г. Нарьянмар, 15 О/м&quot;, &quot;contact_phone&quot;:&quot;+79211234567&quot; }, { &quot;account_id&quot;:3, &quot;last_name&quot;:&quot; Исмагилов&quot;, &quot;first_name&quot;:&quot; Абдурахман&quot;, &quot;birthday&quot;:&quot;1960-01-01&quot;, &quot;passport_series&quot;:&quot;1003&quot;, &quot;passport_number&quot;:&quot;123456&quot;, &quot;date_of_issue&quot;:&quot;2001-01-01&quot;, &quot;place_of_issue&quot;:&quot; г. Барнаул, 7 О/м&quot;, &quot;contact_phone&quot;:&quot;+79211234567&quot; } ]" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://client-server:8888" />
+          <option name="urlPath" value="app_dev.php/clients/api/v1/account/personal_data/1/1/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-Api-Hash" />
+                <option name="value" value="ApiToken secretKeyDigest=&quot;MzI1MTVjYjYxZDRiMTU0MGI1NDY4NTAyZWIzMGQzNGNiNTdiNmQ0Nw==&quot;, Nonce=&quot;YzZhZmY1YTAxNDMxYTRlMw==&quot;, Created=&quot;2014-09-03T21:55:07+04:00&quot;" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="[ { &quot;account_id&quot;:1, &quot;last_name&quot;:&quot;Иванов&quot;, &quot;first_name&quot;:&quot;Петр&quot;, &quot;middle_name&quot;:&quot;Сидорович&quot;, &quot;birthday&quot;:&quot;1960-01-01&quot;, &quot;passport_series&quot;:&quot;4005&quot;, &quot;passport_number&quot;:&quot;123456&quot;, &quot;date_of_issue&quot;:&quot;2001-01-01&quot;, &quot;place_of_issue&quot;:&quot; г. Нарьянмар, 15 О/м&quot;, &quot;contact_phone&quot;:&quot;+79211234567&quot; }, { &quot;account_id&quot;:3, &quot;last_name&quot;:&quot; Исмагилов&quot;, &quot;first_name&quot;:&quot; Абдурахман&quot;, &quot;birthday&quot;:&quot;1960-01-01&quot;, &quot;passport_series&quot;:&quot;1003&quot;, &quot;passport_number&quot;:&quot;123456&quot;, &quot;date_of_issue&quot;:&quot;2001-01-01&quot;, &quot;place_of_issue&quot;:&quot; г. Барнаул, 7 О/м&quot;, &quot;contact_phone&quot;:&quot;+79211234567&quot; } ]" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://client-server:8888" />
+          <option name="urlPath" value="app_dev.php/clients/api/v1/account/personal_data/1/1/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-Api-Hash" />
+                <option name="value" value="ApiToken secretKeyDigest=&quot;YjljY2I4ZTdjMTI2ZjI0OWU5ZTExNTgzM2QzMmFmODUzYzYzZmNkOQ==&quot;, Nonce=&quot;YmNkM2ExZWNkYzk5NjgyYw==&quot;, Created=&quot;2014-09-03T21:53:28+04:00&quot;" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="[ { &quot;account_id&quot;:1, &quot;last_name&quot;:&quot;Иванов&quot;, &quot;first_name&quot;:&quot;Петр&quot;, &quot;middle_name&quot;:&quot;Сидорович&quot;, &quot;birthday&quot;:&quot;1960-01-01&quot;, &quot;passport_series&quot;:&quot;4005&quot;, &quot;passport_number&quot;:&quot;123456&quot;, &quot;date_of_issue&quot;:&quot;2001-01-01&quot;, &quot;place_of_issue&quot;:&quot; г. Нарьянмар, 15 О/м&quot;, &quot;contact_phone&quot;:&quot;+79211234567&quot; }, { &quot;account_id&quot;:3, &quot;last_name&quot;:&quot; Исмагилов&quot;, &quot;first_name&quot;:&quot; Абдурахман&quot;, &quot;birthday&quot;:&quot;1960-01-01&quot;, &quot;passport_series&quot;:&quot;1003&quot;, &quot;passport_number&quot;:&quot;123456&quot;, &quot;date_of_issue&quot;:&quot;2001-01-01&quot;, &quot;place_of_issue&quot;:&quot; г. Барнаул, 7 О/м&quot;, &quot;contact_phone&quot;:&quot;+79211234567&quot; } ]" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://client-server:8888" />
+          <option name="urlPath" value="app_dev.php/clients/api/v1/account/personal_data/1/1/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-Api-Hash" />
+                <option name="value" value="ApiToken secretKeyDigest=&quot;MDQzYjA1NDdjNzI5NGRhOTI0NzM3ODNkMDU1ZDA3NGI2NzhlZDY0Nw==&quot;, Nonce=&quot;MWRmN2YyZGU2N2QwYjViNw==&quot;, Created=&quot;2014-09-03T21:51:59+04:00&quot;" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value=" [{&quot;account_id&quot;:2,&quot;organisation_type&quot;:&quot;\u041e\u041e\u041e&quot;,&quot;organisation_name&quot;:&quot;\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e \u0441 \u043e\u0440\u0433\u0430\u043d\u0438\u0447\u0435\u043d\u043d\u043e\u0439 \u043e\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u0441\u0442\u044c\u044e \&quot;\u0420\u043e\u043c\u0430\u0448\u043a\u0430\&quot;&quot;,&quot;legal_address&quot;:{&quot;zip&quot;:&quot;190000&quot;,&quot;country&quot;:&quot;\u0420\u0424&quot;,&quot;state&quot;:&quot;\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433&quot;,&quot;city&quot;:&quot;\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433&quot;,&quot;street&quot;:&quot;\u041d\u0435\u0432\u0441\u043a\u0438\u0439 \u043f\u0440.&quot;,&quot;house&quot;:1,&quot;build&quot;:1,&quot;office&quot;:1},&quot;actual_address&quot;:{&quot;zip&quot;:&quot;190000&quot;,&quot;country&quot;:&quot;\u0420\u0424&quot;,&quot;state&quot;:&quot;\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433&quot;,&quot;city&quot;:&quot;\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433&quot;,&quot;street&quot;:&quot;\u041d\u0435\u0432\u0441\u043a\u0438\u0439 \u043f\u0440.&quot;,&quot;house&quot;:1,&quot;build&quot;:1,&quot;office&quot;:1},&quot;email&quot;:&quot;some_one@mail.ru&quot;,&quot;phone&quot;:&quot;+7 (812) 1234567&quot;,&quot;inn&quot;:&quot;1234567890&quot;,&quot;kpp&quot;:&quot;123456789&quot;,&quot;okved&quot;:&quot;78.111&quot;,&quot;okpo&quot;:&quot;12345678&quot;,&quot;bank&quot;:{&quot;name&quot;:&quot;\u0421\u0431\u0435\u0440\u0431\u0430\u043d\u043a \u0420\u0424&quot;,&quot;bik&quot;:&quot;044525225&quot;,&quot;correspondent_account&quot;:&quot;30101810400000000225&quot;,&quot;checking_account&quot;:&quot;12345678901234567890&quot;},&quot;organisation_head&quot;:{&quot;last_name&quot;:&quot;\u0418\u0432\u0430\u043d\u043e\u0432&quot;,&quot;first_name&quot;:&quot;\u041f\u0435\u0442\u0440&quot;,&quot;middle_name&quot;:&quot;\u0421\u0438\u0434\u043e\u0440\u043e\u0432\u0438\u0447&quot;,&quot;base_activities&quot;:&quot;\u043d\u0430 \u043e\u0441\u043d\u043e\u0432\u0430\u043d\u0438\u0435 \u0443\u0441\u0442\u0430\u0432\u0430 \u2116 \u043a\u0430\u043a\u043e\u0439-\u0442\u043e \u043e\u0442 \u0442\u0430\u043a\u043e\u0433\u043e-\u0442\u043e \u0447\u0438\u0441\u043b\u0430 \u0438 \u0442.\u0434. \u0438 \u0442.\u043f.&quot;,&quot;post&quot;:&quot;\u0413\u0435\u043d\u0435\u0440\u0430\u043b\u044c\u043d\u044b\u0439 \u0434\u0438\u0440\u0435\u043a\u0442\u043e\u0440&quot;}}]" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://client-server:8888" />
+          <option name="urlPath" value="app_dev.php/clients/api/v1/account/personal_data/1/1/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-Api-Hash" />
+                <option name="value" value="ApiToken secretKeyDigest=&quot;YTgzYjAxN2Q4MGY2NDcxODc5NjhhMTNjZmVhYzI0ZDVkNjFjMTViNw==&quot;, Nonce=&quot;NjI5ZmUzMGVkYTJmZmY2MQ==&quot;, Created=&quot;2014-09-03T21:48:49+04:00&quot;" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value=" [{&quot;account_id&quot;:1,&quot;organisation_type&quot;:&quot;\u041e\u041e\u041e&quot;,&quot;organisation_name&quot;:&quot;\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e \u0441 \u043e\u0440\u0433\u0430\u043d\u0438\u0447\u0435\u043d\u043d\u043e\u0439 \u043e\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u0441\u0442\u044c\u044e \&quot;\u0420\u043e\u043c\u0430\u0448\u043a\u0430\&quot;&quot;,&quot;legal_address&quot;:{&quot;zip&quot;:&quot;190000&quot;,&quot;country&quot;:&quot;\u0420\u0424&quot;,&quot;state&quot;:&quot;\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433&quot;,&quot;city&quot;:&quot;\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433&quot;,&quot;street&quot;:&quot;\u041d\u0435\u0432\u0441\u043a\u0438\u0439 \u043f\u0440.&quot;,&quot;house&quot;:1,&quot;build&quot;:1,&quot;office&quot;:1},&quot;actual_address&quot;:{&quot;zip&quot;:&quot;190000&quot;,&quot;country&quot;:&quot;\u0420\u0424&quot;,&quot;state&quot;:&quot;\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433&quot;,&quot;city&quot;:&quot;\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433&quot;,&quot;street&quot;:&quot;\u041d\u0435\u0432\u0441\u043a\u0438\u0439 \u043f\u0440.&quot;,&quot;house&quot;:1,&quot;build&quot;:1,&quot;office&quot;:1},&quot;email&quot;:&quot;some_one@mail.ru&quot;,&quot;phone&quot;:&quot;+7 (812) 1234567&quot;,&quot;inn&quot;:&quot;1234567890&quot;,&quot;kpp&quot;:&quot;123456789&quot;,&quot;okved&quot;:&quot;78.111&quot;,&quot;okpo&quot;:&quot;12345678&quot;,&quot;bank&quot;:{&quot;name&quot;:&quot;\u0421\u0431\u0435\u0440\u0431\u0430\u043d\u043a \u0420\u0424&quot;,&quot;bik&quot;:&quot;044525225&quot;,&quot;correspondent_account&quot;:&quot;30101810400000000225&quot;,&quot;checking_account&quot;:&quot;12345678901234567890&quot;},&quot;organisation_head&quot;:{&quot;last_name&quot;:&quot;\u0418\u0432\u0430\u043d\u043e\u0432&quot;,&quot;first_name&quot;:&quot;\u041f\u0435\u0442\u0440&quot;,&quot;middle_name&quot;:&quot;\u0421\u0438\u0434\u043e\u0440\u043e\u0432\u0438\u0447&quot;,&quot;base_activities&quot;:&quot;\u043d\u0430 \u043e\u0441\u043d\u043e\u0432\u0430\u043d\u0438\u0435 \u0443\u0441\u0442\u0430\u0432\u0430 \u2116 \u043a\u0430\u043a\u043e\u0439-\u0442\u043e \u043e\u0442 \u0442\u0430\u043a\u043e\u0433\u043e-\u0442\u043e \u0447\u0438\u0441\u043b\u0430 \u0438 \u0442.\u0434. \u0438 \u0442.\u043f.&quot;,&quot;post&quot;:&quot;\u0413\u0435\u043d\u0435\u0440\u0430\u043b\u044c\u043d\u044b\u0439 \u0434\u0438\u0440\u0435\u043a\u0442\u043e\u0440&quot;}}]" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://client-server:8888" />
+          <option name="urlPath" value="app_dev.php/clients/api/v1/account/personal_data/1/1/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-Api-Hash" />
+                <option name="value" value="ApiToken secretKeyDigest=&quot;MThlZTgxNzNkNGU1MjRjYjVjMDBmNzQ4MmE0YWVkZmYxNjYyMzE5Yg==&quot;, Nonce=&quot;NjRhYTk1ZWQ5NzE2ZjQ3Zg==&quot;, Created=&quot;2014-09-03T21:47:38+04:00&quot;" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value=" [{&quot;account_id&quot;:1,&quot;organisation_type&quot;:&quot;\u041e\u041e\u041e&quot;,&quot;organisation_name&quot;:&quot;\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e \u0441 \u043e\u0440\u0433\u0430\u043d\u0438\u0447\u0435\u043d\u043d\u043e\u0439 \u043e\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u0441\u0442\u044c\u044e \&quot;\u0420\u043e\u043c\u0430\u0448\u043a\u0430\&quot;&quot;,&quot;legal_address&quot;:{&quot;zip&quot;:&quot;190000&quot;,&quot;country&quot;:&quot;\u0420\u0424&quot;,&quot;state&quot;:&quot;\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433&quot;,&quot;city&quot;:&quot;\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433&quot;,&quot;street&quot;:&quot;\u041d\u0435\u0432\u0441\u043a\u0438\u0439 \u043f\u0440.&quot;,&quot;house&quot;:1,&quot;build&quot;:1,&quot;office&quot;:1},&quot;actual_address&quot;:{&quot;zip&quot;:&quot;190000&quot;,&quot;country&quot;:&quot;\u0420\u0424&quot;,&quot;state&quot;:&quot;\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433&quot;,&quot;city&quot;:&quot;\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433&quot;,&quot;street&quot;:&quot;\u041d\u0435\u0432\u0441\u043a\u0438\u0439 \u043f\u0440.&quot;,&quot;house&quot;:1,&quot;build&quot;:1,&quot;office&quot;:1},&quot;email&quot;:&quot;some_one@mail.ru&quot;,&quot;phone&quot;:&quot;+7 (812) 1234567&quot;,&quot;inn&quot;:&quot;1234567890&quot;,&quot;kpp&quot;:&quot;123456789&quot;,&quot;okved&quot;:&quot;78.111&quot;,&quot;okpo&quot;:&quot;12345678&quot;,&quot;bank&quot;:{&quot;name&quot;:&quot;\u0421\u0431\u0435\u0440\u0431\u0430\u043d\u043a \u0420\u0424&quot;,&quot;bik&quot;:&quot;044525225&quot;,&quot;correspondent_account&quot;:&quot;30101810400000000225&quot;,&quot;checking_account&quot;:&quot;12345678901234567890&quot;},&quot;organisation_head&quot;:{&quot;last_name&quot;:&quot;\u0418\u0432\u0430\u043d\u043e\u0432&quot;,&quot;first_name&quot;:&quot;\u041f\u0435\u0442\u0440&quot;,&quot;middle_name&quot;:&quot;\u0421\u0438\u0434\u043e\u0440\u043e\u0432\u0438\u0447&quot;,&quot;base_activities&quot;:&quot;\u043d\u0430 \u043e\u0441\u043d\u043e\u0432\u0430\u043d\u0438\u0435 \u0443\u0441\u0442\u0430\u0432\u0430 \u2116 \u043a\u0430\u043a\u043e\u0439-\u0442\u043e \u043e\u0442 \u0442\u0430\u043a\u043e\u0433\u043e-\u0442\u043e \u0447\u0438\u0441\u043b\u0430 \u0438 \u0442.\u0434. \u0438 \u0442.\u043f.&quot;,&quot;post&quot;:&quot;\u0413\u0435\u043d\u0435\u0440\u0430\u043b\u044c\u043d\u044b\u0439 \u0434\u0438\u0440\u0435\u043a\u0442\u043e\u0440&quot;}}]" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://client-server:8888" />
+          <option name="urlPath" value="app_dev.php/clients/api/v1/account/personal_data/1/1/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-Api-Hash" />
+                <option name="value" value="ApiToken secretKeyDigest=&quot;NjI1Yzg3ZDM3ZTQ4ZTc1NDEwMTE1ZTQ4NDhiMjdhNDc3ZWZiOTU0NA==&quot;, Nonce=&quot;Yjk1M2E5NWRiNzE1NzI2Mw==&quot;, Created=&quot;2014-09-03T21:45:06+04:00&quot;" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="[ { &quot;account_id&quot;: 1, &quot;organisation_type&quot;:&quot; ООО&quot;, &quot;organisation_name: &quot;Общество с органиченной ответственностью &quot;Ромашка&quot;&quot;, &quot;legal_address&quot;: { &quot;zip&quot;:&quot;190000&quot;, &quot;country&quot;:&quot;РФ&quot;, &quot;state&quot;:&quot;Санкт-Петербург&quot;, &quot;city&quot;:&quot;Санкт-Петербург&quot;, &quot;street&quot;:&quot;Невский пр.&quot;, &quot;house&quot;:1, &quot;build&quot;:1, &quot;office&quot;:1 }, &quot;actual_address&quot;: { &quot;zip&quot;:&quot;190000&quot;, &quot;country&quot;:&quot;РФ&quot;, &quot;state&quot;:&quot;Санкт-Петербург&quot;, &quot;city&quot;:&quot;Санкт-Петербург&quot;, &quot;street&quot;:&quot;Невский пр.&quot;, &quot;house&quot;:1, &quot;build&quot;:1, &quot;office&quot;:1 }, &quot;email&quot;:&quot;some_one@mail.ru&quot;, &quot;phone&quot;:&quot;+7 (812) 1234567&quot;, &quot;inn&quot;:&quot;1234567890&quot;, &quot;kpp&quot;:&quot;123456789&quot;, &quot;okved&quot;:&quot;78.111&quot;, &quot;okpo&quot;:&quot;12345678&quot;, &quot;bank&quot;: { &quot;name&quot;:&quot;Сбербанк РФ&quot;, &quot;bik&quot;:&quot;044525225&quot;, &quot;correspondent_account&quot;:&quot;30101810400000000225&quot;, &quot;checking_account&quot;:&quot;12345678901234567890&quot; }, &quot;organisation_head&quot;: { &quot;last_name&quot;:&quot;Иванов&quot;, &quot;first_name&quot;:&quot;Петр&quot;, &quot;middle_name&quot;:&quot;Сидорович&quot;, &quot;base_activities&quot;:&quot;на основание устава № какой-то от такого-то числа и т.д. и т.п. &quot;, &quot;post&quot;:&quot;Генеральный директор&quot; } } ]" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://client-server:8888" />
+          <option name="urlPath" value="app_dev.php/clients/api/v1/account/personal_data/1/1/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-Api-Hash" />
+                <option name="value" value="ApiToken secretKeyDigest=&quot;MmIyNjU1MTRjNGY5YzY5ZTI5NzkyZWJlMTY0MmRiZWYzMjZiZjhkNQ==&quot;, Nonce=&quot;YTZiNTIzZGI0YjFkYTJhOA==&quot;, Created=&quot;2014-09-03T21:44:26+04:00&quot;" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{ &quot;account_id&quot;: 1, &quot;organisation_type&quot;:&quot; ООО&quot;, &quot;organisation_name: &quot;Общество с органиченной ответственностью &quot;Ромашка&quot;&quot;, &quot;legal_address&quot;: { &quot;zip&quot;:&quot;190000&quot;, &quot;country&quot;:&quot;РФ&quot;, &quot;state&quot;:&quot;Санкт-Петербург&quot;, &quot;city&quot;:&quot;Санкт-Петербург&quot;, &quot;street&quot;:&quot;Невский пр.&quot;, &quot;house&quot;:1, &quot;build&quot;:1, &quot;office&quot;:1 }, &quot;actual_address&quot;: { &quot;zip&quot;:&quot;190000&quot;, &quot;country&quot;:&quot;РФ&quot;, &quot;state&quot;:&quot;Санкт-Петербург&quot;, &quot;city&quot;:&quot;Санкт-Петербург&quot;, &quot;street&quot;:&quot;Невский пр.&quot;, &quot;house&quot;:1, &quot;build&quot;:1, &quot;office&quot;:1 }, &quot;email&quot;:&quot;some_one@mail.ru&quot;, &quot;phone&quot;:&quot;+7 (812) 1234567&quot;, &quot;inn&quot;:&quot;1234567890&quot;, &quot;kpp&quot;:&quot;123456789&quot;, &quot;okved&quot;:&quot;78.111&quot;, &quot;okpo&quot;:&quot;12345678&quot;, &quot;bank&quot;: { &quot;name&quot;:&quot;Сбербанк РФ&quot;, &quot;bik&quot;:&quot;044525225&quot;, &quot;correspondent_account&quot;:&quot;30101810400000000225&quot;, &quot;checking_account&quot;:&quot;12345678901234567890&quot; }, &quot;organisation_head&quot;: { &quot;last_name&quot;:&quot;Иванов&quot;, &quot;first_name&quot;:&quot;Петр&quot;, &quot;middle_name&quot;:&quot;Сидорович&quot;, &quot;base_activities&quot;:&quot;на основание устава № какой-то от такого-то числа и т.д. и т.п. &quot;, &quot;post&quot;:&quot;Генеральный директор&quot; } } ]" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://client-server:8888" />
+          <option name="urlPath" value="app_dev.php/clients/api/v1/account/personal_data/1/1/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-Api-Hash" />
+                <option name="value" value="ApiToken secretKeyDigest=&quot;MDE5YjI2M2Q2ZjcxM2Y1OTRkMWZlZTBhNzU3YzYwYjJlNWI4MTZmOQ==&quot;, Nonce=&quot;YmZlZTQ1MDcyOGY2ZDg0Mg==&quot;, Created=&quot;2014-09-03T10:37:49+04:00&quot;" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{ &quot;account_id&quot;: 1, &quot;organisation_type&quot;:&quot; ООО&quot;, &quot;organisation_name: &quot;Общество с органиченной ответственностью &quot;Ромашка&quot;&quot;, &quot;legal_address&quot;: { &quot;zip&quot;:&quot;190000&quot;, &quot;country&quot;:&quot;РФ&quot;, &quot;state&quot;:&quot;Санкт-Петербург&quot;, &quot;city&quot;:&quot;Санкт-Петербург&quot;, &quot;street&quot;:&quot;Невский пр.&quot;, &quot;house&quot;:1, &quot;build&quot;:1, &quot;office&quot;:1 }, &quot;actual_address&quot;: { &quot;zip&quot;:&quot;190000&quot;, &quot;country&quot;:&quot;РФ&quot;, &quot;state&quot;:&quot;Санкт-Петербург&quot;, &quot;city&quot;:&quot;Санкт-Петербург&quot;, &quot;street&quot;:&quot;Невский пр.&quot;, &quot;house&quot;:1, &quot;build&quot;:1, &quot;office&quot;:1 }, &quot;email&quot;:&quot;some_one@mail.ru&quot;, &quot;phone&quot;:&quot;+7 (812) 1234567&quot;, &quot;inn&quot;:&quot;1234567890&quot;, &quot;kpp&quot;:&quot;123456789&quot;, &quot;okved&quot;:&quot;78.111&quot;, &quot;okpo&quot;:&quot;12345678&quot;, &quot;bank&quot;: { &quot;name&quot;:&quot;Сбербанк РФ&quot;, &quot;bik&quot;:&quot;044525225&quot;, &quot;correspondent_account&quot;:&quot;30101810400000000225&quot;, &quot;checking_account&quot;:&quot;12345678901234567890&quot; }, &quot;organisation_head&quot;: { &quot;last_name&quot;:&quot;Иванов&quot;, &quot;first_name&quot;:&quot;Петр&quot;, &quot;middle_name&quot;:&quot;Сидорович&quot;, &quot;base_activities&quot;:&quot;на основание устава № какой-то от такого-то числа и т.д. и т.п. &quot;, &quot;post&quot;:&quot;Генеральный директор&quot; } } ]" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://client-server:8888" />
+          <option name="urlPath" value="/app_dev.php/clients/api/v1/account/1/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-Api-Hash" />
+                <option name="value" value="ApiToken secretKeyDigest=&quot;MDE5YjI2M2Q2ZjcxM2Y1OTRkMWZlZTBhNzU3YzYwYjJlNWI4MTZmOQ==&quot;, Nonce=&quot;YmZlZTQ1MDcyOGY2ZDg0Mg==&quot;, Created=&quot;2014-09-03T10:37:49+04:00&quot;" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="[ { &quot;id&quot;:1, &quot;account_name&quot;:&quot;Email&quot;, &quot;account_value&quot;:&quot;some_one@mail.ru&quot;, &quot;authorisation_type&quot;:0, &quot;password_hash&quot;:&quot;0ca94cce80ae40f752b0696fb40b48c4&quot;, &quot;password_hash_type&quot;:&quot;md5&quot; }, { &quot;id&quot;:2, &quot;account_type&quot;:1, &quot;account_name&quot;:&quot;Login&quot;, &quot;account_value&quot;:&quot;some_one&quot;, &quot;authorisation_type&quot;:0, &quot;password_hash&quot;:&quot;15f48766eede2d561ad31d973715f021f269d1a3&quot;, &quot;password_hash_type&quot;:&quot;sha1&quot; }, { &quot;id&quot;:3, &quot;account_type&quot;:0, &quot;account_name&quot;:&quot;Login&quot;, &quot;account_value&quot;:&quot;some_one_else&quot;, &quot;authorisation_type&quot;:0, &quot;password_hash&quot;:&quot;d070ed5b21b5bbaf071a257e0d881c8b&quot;, &quot;password_hash_type&quot;:&quot;md5(sha1)&quot; }, { &quot;id&quot;:4, &quot;account_type&quot;:0, &quot;account_name&quot;:&quot; Номер телефона&quot;, &quot;account_value&quot;:&quot;+79211234567&quot;, &quot;authorisation_type&quot;:88 } ]" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://client-server:8888" />
+          <option name="urlPath" value="/app_dev.php/clients/api/v1/account/1/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-Api-Hash" />
+                <option name="value" value="ApiToken secretKeyDigest=&quot;MDljZjcxYTRjZTViM2JmZjdmMjFlMjgxNDFlZGJmNDQwNTk5Mzk3Ng==&quot;, Nonce=&quot;MmQwNzVkMjc0ZTJmM2MzNQ==&quot;, Created=&quot;2014-09-03T10:23:29+04:00&quot;" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="[ { &quot;id&quot;:1, &quot;account_name&quot;:&quot;Email&quot;, &quot;account_value&quot;:&quot;some_one@mail.ru&quot;, &quot;authorisation_type&quot;:0, &quot;password_hash&quot;:&quot;0ca94cce80ae40f752b0696fb40b48c4&quot;, &quot;password_hash_type&quot;:&quot;md5&quot; }, { &quot;id&quot;:2, &quot;account_type&quot;:1, &quot;account_name&quot;:&quot;Login&quot;, &quot;account_value&quot;:&quot;some_one&quot;, &quot;authorisation_type&quot;:0, &quot;password_hash&quot;:&quot;15f48766eede2d561ad31d973715f021f269d1a3&quot;, &quot;password_hash_type&quot;:&quot;sha1&quot; }, { &quot;id&quot;:3, &quot;account_type&quot;:0, &quot;account_name&quot;:&quot;Login&quot;, &quot;account_value&quot;:&quot;some_one_else&quot;, &quot;authorisation_type&quot;:0, &quot;password_hash&quot;:&quot;d070ed5b21b5bbaf071a257e0d881c8b&quot;, &quot;password_hash_type&quot;:&quot;md5(sha1)&quot; }, { &quot;id&quot;:4, &quot;account_type&quot;:0, &quot;account_name&quot;:&quot; Номер телефона&quot;, &quot;account_value&quot;:&quot;+79211234567&quot;, &quot;authorisation_type&quot;:88 } ]" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://client-server:8888" />
+          <option name="urlPath" value="/app_dev.php/clients/api/v1/account/1/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-Api-Hash" />
+                <option name="value" value="ApiToken secretKeyDigest=&quot;MDljZjcxYTRjZTViM2JmZjdmMjFlMjgxNDFlZGJmNDQwNTk5Mzk3Ng==&quot;, Nonce=&quot;MmQwNzVkMjc0ZTJmM2MzNQ==&quot;, Created=&quot;2014-09-03T10:23:29+04:00&quot;" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="[ { &quot;id&quot;:1, &quot;account_name&quot;:&quot;Email&quot;, &quot;account_value&quot;:&quot;some_one@mail.ru&quot;, &quot;authorisation_type&quot;:0, &quot;password_hash&quot;:&quot;0ca94cce80ae40f752b0696fb40b48c4&quot;, &quot;password_hash_type&quot;:&quot;md5&quot; }, { &quot;id&quot;:2, &quot;account_type&quot;:1, &quot;account_name&quot;:&quot;Login&quot;, &quot;account_value&quot;:&quot;some_one&quot;, &quot;authorisation_type&quot;:0, &quot;password_hash&quot;:&quot;15f48766eede2d561ad31d973715f021f269d1a3&quot;, &quot;password_hash_type&quot;:&quot;sha1&quot; }, { &quot;id&quot;:3, &quot;account_type&quot;:0, &quot;account_name&quot;:&quot;Login&quot;, &quot;account_value&quot;:&quot;some_one_else&quot;, &quot;authorisation_type&quot;:0, &quot;password_hash&quot;:&quot;d070ed5b21b5bbaf071a257e0d881c8b&quot;, &quot;password_hash_type&quot;:&quot;md5(sha1)&quot; }, { &quot;id&quot;:4, &quot;account_type&quot;:0, &quot;account_name&quot;:&quot; Номер телефона&quot;, &quot;account_value&quot;:&quot;+79211234567&quot;, &quot;authorisation_type&quot;:1 } ]" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
+  </component>
   <component name="RunManager" selected="PHPUnit.AuthenticatorListenerTest.testCorrectAuth">
     <configuration default="false" name="AuthenticatorListenerTest.testCorrectAuth" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Authenticator\ApiSecurityBundle\Tests\AuthenticatorListenerTest" file="$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/Tests/AuthenticatorListenerTest.php" method="testCorrectAuth" scope="Method" />
@@ -661,15 +1531,19 @@
       <created>1409321866006</created>
       <updated>1409321866006</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="1. исправлены роуты всех действий API (введена защита от дурака. как показала практика необходимое действие.)&#10;2. введена проверка наличия параметра application_id в листнере безопасности API методов.">
+      <created>1409330986408</created>
+      <updated>1409330986408</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1280" height="706" extended-state="0" />
+    <frame x="0" y="22" width="1280" height="696" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294702" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Symfony2" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -677,13 +1551,14 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32943144" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.8162252" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3457189" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3513732" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48863637" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4884106" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294702" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -708,52 +1583,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="28" selection-start="223" selection-end="223" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="360">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/Listener/ApplicationsApiListener.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="12" selection-start="2277" selection-end="2277" vertical-scroll-proportion="0.0" vertical-offset="1035" max-vertical-offset="1590" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="26" selection-start="445" selection-end="445" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="345" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/Entity/Repository/ClientsRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="49" selection-start="1588" selection-end="1588" vertical-scroll-proportion="0.0" vertical-offset="63" max-vertical-offset="960">
-          <folding>
-            <element signature="e#69#98#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/Entity/Clients.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="141" column="37" selection-start="2511" selection-end="2528" vertical-scroll-proportion="0.0" vertical-offset="1635" max-vertical-offset="3585">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/check.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.7967033" vertical-offset="435" max-vertical-offset="2220" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2640" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Authentication/SimplePreAuthenticatorInterface.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="10" selection-start="409" selection-end="409" vertical-scroll-proportion="0.3021978" vertical-offset="0" max-vertical-offset="546" />
@@ -771,9 +1600,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Security/Core/User/UserInterface.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="10" selection-start="1070" selection-end="1070" vertical-scroll-proportion="-0.7013233" vertical-offset="761" max-vertical-offset="1290">
-          <folding />
-        </state>
+        <state line="33" column="10" selection-start="1070" selection-end="1070" vertical-scroll-proportion="-0.7013233" vertical-offset="761" max-vertical-offset="1290" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Authentication/Token/TokenInterface.php">
@@ -798,11 +1625,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/AuthenticatorApiSecurityBundle.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="67" selection-start="497" selection-end="497" vertical-scroll-proportion="0.44466403" vertical-offset="0" max-vertical-offset="506">
-          <folding>
-            <element signature="e#51#110#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="15" column="67" selection-start="497" selection-end="497" vertical-scroll-proportion="0.44466403" vertical-offset="0" max-vertical-offset="506" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/Factory/AuthApiFactory.php">
@@ -827,49 +1650,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Security/Core/User/UserProviderInterface.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="20" selection-start="1655" selection-end="1655" vertical-scroll-proportion="0.34709194" vertical-offset="445" max-vertical-offset="1110">
-          <folding />
-        </state>
+        <state line="50" column="20" selection-start="1655" selection-end="1655" vertical-scroll-proportion="0.34709194" vertical-offset="445" max-vertical-offset="1110" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/Resources/config/services.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="14" selection-start="607" selection-end="607" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="51" selection-start="97" selection-end="97" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
-          <folding />
-        </state>
+        <state line="14" column="14" selection-start="607" selection-end="607" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/Tests/AuthenticatorListenerTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="117" selection-start="707" selection-end="1101" vertical-scroll-proportion="-16.875" vertical-offset="75" max-vertical-offset="705">
-          <folding>
-            <element signature="e#148#200#0" expanded="false" />
-            <element signature="e#539#579#1" expanded="false" />
-          </folding>
-        </state>
+        <state line="37" column="117" selection-start="707" selection-end="1101" vertical-scroll-proportion="-16.875" vertical-offset="75" max-vertical-offset="705" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/Command/GenerateApiClientHeaderHashCommand.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="27" selection-start="686" selection-end="696" vertical-scroll-proportion="-5.7083335" vertical-offset="133" max-vertical-offset="630">
-          <folding>
-            <element signature="e#150#215#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="23" column="27" selection-start="686" selection-end="696" vertical-scroll-proportion="-5.7083335" vertical-offset="133" max-vertical-offset="630" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/Entity/Repository/ClientsRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="71" selection-start="1012" selection-end="1012" vertical-scroll-proportion="-15.0" vertical-offset="90" max-vertical-offset="975">
           <folding>
-            <element signature="e#69#98#0" expanded="true" />
+            <element signature="e#69#98#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -886,9 +1689,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/Provider/ClientsApiProvider.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="67" selection-start="1428" selection-end="1428" vertical-scroll-proportion="0.0" vertical-offset="600" max-vertical-offset="1185">
-          <folding />
-        </state>
+        <state line="40" column="67" selection-start="1428" selection-end="1428" vertical-scroll-proportion="0.0" vertical-offset="600" max-vertical-offset="1185" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/logs/dev.log">
@@ -903,21 +1704,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/config_app.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="59" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
-          <folding />
-        </state>
+        <state line="7" column="59" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/logs/clients_api/2014-08-28.log">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/Entity/Clients.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="3" selection-start="365" selection-end="391" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="3585">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Validator/Context/ExecutionContextInterface.php">
@@ -932,39 +1724,9 @@
         <state line="121" column="79" selection-start="4724" selection-end="4738" vertical-scroll-proportion="0.7900553" vertical-offset="1281" max-vertical-offset="4920" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Entity/IndividualPersonalData.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="28" selection-start="1079" selection-end="1079" vertical-scroll-proportion="0.0" vertical-offset="870" max-vertical-offset="6195">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Entity/LegalEntityPersonalData.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="29" selection-start="1150" selection-end="1150" vertical-scroll-proportion="0.0" vertical-offset="690" max-vertical-offset="16995">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Entity/ApplicationsUsers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="3" selection-start="310" selection-end="310" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="6600">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="90" selection-start="867" selection-end="903" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="630">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="563">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="563" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/logs/clients_api/2014-08-29.log">
@@ -984,11 +1746,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/Command/CreateApiClientCommand.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="48" selection-start="563" selection-end="588" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="780">
-          <folding>
-            <element signature="e#150#201#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="21" column="48" selection-start="563" selection-end="588" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="780" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/HttpFoundation/Request.php">
@@ -1007,41 +1765,116 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Exception/ApplicationsUsersException.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="52" selection-start="210" selection-end="210" vertical-scroll-proportion="0.15151516" vertical-offset="0" max-vertical-offset="495">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Helper/JsonContent.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="24" selection-start="685" selection-end="685" vertical-scroll-proportion="-12.5" vertical-offset="0" max-vertical-offset="420">
-          <folding>
-            <element signature="e#155#228#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="10" column="52" selection-start="210" selection-end="210" vertical-scroll-proportion="0.15151516" vertical-offset="0" max-vertical-offset="495" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/Logger/LoggerListener.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="44" selection-start="2151" selection-end="2151" vertical-scroll-proportion="-24.5" vertical-offset="357" max-vertical-offset="1200">
-          <folding>
-            <element signature="e#149#178#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="68" column="44" selection-start="2151" selection-end="2151" vertical-scroll-proportion="-24.5" vertical-offset="357" max-vertical-offset="1200" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/Listener/ApplicationsApiListener.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="0" selection-start="2577" selection-end="2577" vertical-scroll-proportion="-6.0416665" vertical-offset="845" max-vertical-offset="1830">
+        <state line="51" column="8" selection-start="1533" selection-end="1533" vertical-scroll-proportion="-1.6666666" vertical-offset="545" max-vertical-offset="1830" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Helper/JsonContent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="9" selection-start="659" selection-end="659" vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="420">
+          <folding>
+            <element signature="e#155#228#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/OneToOne.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="11" selection-start="1221" selection-end="1221" vertical-scroll-proportion="0.34709194" vertical-offset="100" max-vertical-offset="765">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="54" selection-start="726" selection-end="726" vertical-scroll-proportion="-0.625" vertical-offset="270" max-vertical-offset="975" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="907" selection-end="907" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="630">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="36" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="405" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/Entity/Clients.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="6" selection-start="402" selection-end="402" vertical-scroll-proportion="-0.9888683" vertical-offset="743" max-vertical-offset="3975">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/Core_c.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="199" column="53" selection-start="5467" selection-end="5472" vertical-scroll-proportion="0.33265308" vertical-offset="2822" max-vertical-offset="5220" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Validator/ValidatorInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="41" selection-start="1250" selection-end="1250" vertical-scroll-proportion="-8.0" vertical-offset="303" max-vertical-offset="1695">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Validator/ConstraintViolationInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="38" selection-start="1220" selection-end="1248" vertical-scroll-proportion="-18.75" vertical-offset="0" max-vertical-offset="2025" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Validator/ConstraintViolationListInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="42" selection-start="397" selection-end="429" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="1230" />
+      </provider>
+    </entry>
+    <entry file="file:///private/var/folders/mn/_k2jw4cx0c9brk9tt0b0wswr0000gn/T/tmpRestClientResponse7466901613402893705.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Entity/ApplicationsUsers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="63" selection-start="2372" selection-end="2372" vertical-scroll-proportion="-28.125" vertical-offset="420" max-vertical-offset="7185">
+          <folding>
+            <element signature="e#64#96#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Controller/ApplicationsUsersApiController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="12" selection-start="1385" selection-end="1385" vertical-scroll-proportion="0.33269963" vertical-offset="425" max-vertical-offset="1785">
+        <state line="136" column="6" selection-start="5240" selection-end="5240" vertical-scroll-proportion="0.041666668" vertical-offset="1966" max-vertical-offset="7290">
           <folding>
             <element signature="e#158#218#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Entity/IndividualPersonalData.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="97" selection-end="151" vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="7110">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Entity/LegalEntityPersonalData.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="147" column="32" selection-start="5389" selection-end="5389" vertical-scroll-proportion="0.16697589" vertical-offset="2115" max-vertical-offset="20790">
+          <folding>
+            <element signature="e#64#96#0" expanded="true" />
           </folding>
         </state>
       </provider>
