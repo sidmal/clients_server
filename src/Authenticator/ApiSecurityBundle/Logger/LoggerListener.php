@@ -59,6 +59,7 @@ class LoggerListener
                 'request_post' => $event->getRequest()->request->all(),
                 'request_attributes' => $event->getRequest()->attributes->all(),
                 'application_client' => $event->getRequest()->attributes->get('application_id'),
+                'response_status_code' => $event->getResponse()->getStatusCode(),
                 'response_content' => $event->getResponse()->getContent(),
                 'response_headers' => $event->getResponse()->headers->all(),
 

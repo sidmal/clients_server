@@ -2,3 +2,6 @@ applications_users_api:
     resource: "@AuthenticatorApplicationsUsersBundle/Controller/ApplicationsUsersApiController.php"
     type: annotation
 
+applications_users_forms:
+    resource: "@AuthenticatorApplicationsUsersBundle/Controller/ApplicationUsersController.php"
+    type: annotation

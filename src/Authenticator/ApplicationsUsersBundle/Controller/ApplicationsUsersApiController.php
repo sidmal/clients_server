@@ -188,6 +188,10 @@ class ApplicationsUsersApiController extends Controller implements LoggingInterf
                 $personalData =  $this->setLegalEntityPersonalData($applicationAccount, $item);
             }
 
+            if($personalData instanceof Response){
+                return $personalData;
+            }
+
             $violations = $validator->validate($personalData);
 
             if(count($violations) > 0){
@@ -314,6 +318,14 @@ class ApplicationsUsersApiController extends Controller implements LoggingInterf
 
     protected function setIndividualPersonalData(ApplicationsUsers $applicationAccount, $requestJsonItem)
     {
+        try{
+            $birthday = new \DateTime($requestJsonItem['birthday']);
+            $dateOfIssue = new \DateTime($requestJsonItem['date_of_issue']);
+        }
+        catch(\Exception $e){
+            return new Response('Дата указана в не корректном формате.', Response::HTTP_BAD_REQUEST);
+        }
+
         $personalData = !$applicationAccount->getAccountIndividual() ? new IndividualPersonalData() : $applicationAccount->getAccountIndividual();
 
         $personalData->setApplicationsUser($applicationAccount);
@@ -327,7 +339,7 @@ class ApplicationsUsersApiController extends Controller implements LoggingInterf
             !empty($requestJsonItem['middle_name']) ? $requestJsonItem['middle_name'] : $personalData->getMiddleName()
         );
         $personalData->setBirthday(
-            !empty($requestJsonItem['birthday']) ? new \DateTime($requestJsonItem['birthday']) : $personalData->getBirthday()
+            !empty($requestJsonItem['birthday']) ? $birthday : $personalData->getBirthday()
         );
         $personalData->setPassportSeries(
             !empty($requestJsonItem['passport_series']) ? $requestJsonItem['passport_series'] : $personalData->getPassportSeries()
@@ -336,7 +348,7 @@ class ApplicationsUsersApiController extends Controller implements LoggingInterf
             !empty($requestJsonItem['passport_number']) ? $requestJsonItem['passport_number'] : $personalData->getPassportNumber()
         );
         $personalData->setDateOfIssue(
-            !empty($requestJsonItem['date_of_issue']) ? new \DateTime($requestJsonItem['date_of_issue']) : $personalData->getDateOfIssue()
+            !empty($requestJsonItem['date_of_issue']) ? $dateOfIssue : $personalData->getDateOfIssue()
         );
         $personalData->setPlaceOfIssue(
             !empty($requestJsonItem['place_of_issue']) ? $requestJsonItem['place_of_issue'] : $personalData->getContactPhone()

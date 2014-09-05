@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9c70488-0b68-4653-94c0-74c8a6dbf7ec" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/composer.lock" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Controller/ApplicationUsersController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Form/IndividualPersonalDataType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Resources/views/PersonalData/edit_individual_personal_data.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Controller/ApplicationsUsersApiController.php" afterPath="$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Controller/ApplicationsUsersApiController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/Logger/LoggerListener.php" afterPath="$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/Logger/LoggerListener.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing.yml" afterPath="$PROJECT_DIR$/app/config/routing.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="client_server.iws" />
@@ -37,13 +44,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ApplicationsUsersApiController.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ApplicationsUsersApiController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Controller/ApplicationsUsersApiController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="136" column="6" selection-start="5240" selection-end="5240" vertical-scroll-proportion="0.041666668" vertical-offset="1966" max-vertical-offset="7290">
-              <folding>
-                <element signature="e#158#218#0" expanded="true" />
-              </folding>
+            <state line="191" column="16" selection-start="7628" selection-end="7628" vertical-scroll-proportion="1.412556" vertical-offset="2325" max-vertical-offset="7320">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AppKernel.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="90" selection-start="867" selection-end="903" vertical-scroll-proportion="-7.75" vertical-offset="84" max-vertical-offset="615">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -51,18 +65,58 @@
       <file leaf-file-name="IndividualPersonalData.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Entity/IndividualPersonalData.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="97" selection-end="151" vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="7110">
+            <state line="2" column="54" selection-start="17" selection-end="61" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="7110">
+              <folding>
+                <element signature="e#64#96#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IndividualPersonalDataType.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Form/IndividualPersonalDataType.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="41" column="33" selection-start="1525" selection-end="1541" vertical-scroll-proportion="-7.125" vertical-offset="414" max-vertical-offset="1170">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LegalEntityPersonalData.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Entity/LegalEntityPersonalData.php">
+      <file leaf-file-name="config.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="147" column="32" selection-start="5389" selection-end="5389" vertical-scroll-proportion="0.16697589" vertical-offset="2115" max-vertical-offset="20790">
+            <state line="7" column="4" selection-start="152" selection-end="152" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1140">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="parameters.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="14" selection-start="351" selection-end="351" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ApplicationUsersController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Controller/ApplicationUsersController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="47" column="55" selection-start="1776" selection-end="1783" vertical-scroll-proportion="-16.583334" vertical-offset="232" max-vertical-offset="750">
               <folding>
-                <element signature="e#64#96#0" expanded="true" />
+                <element signature="e#159#231#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="edit_individual_personal_data.html.twig" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Resources/views/PersonalData/edit_individual_personal_data.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="37" selection-start="260" selection-end="260" vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="225">
+              <folding>
+                <element signature="e#23#73#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -77,15 +131,6 @@
   </component>
   <component name="FrameworkCommandLineHistory">
     <commandsHistory>
-      <command text="s clients:api-client:create --name=Тестовый клиент --secret_key=Ggjdjwo22820jkxkjnkgshKKHhs" />
-      <command text="s clients:api-client:create --name=&quot;Тестовый клиент&quot; --secret_key=Ggjdjwo22820jkxkjnkgshKKHhs" />
-      <command text="s clients:api-client:generate_header_hash --secret_key=Ggjdjwo22820jkxkjnkgshKKHhs" />
-      <command text="s generate:bundle --help" />
-      <command text="s generate:bundle --namespace=Authenticator/ApplicationsUsersBundle --dir=src --format=yml" />
-      <command text="s doctrine:generate:entities AuthenticatorApplicationsUsersBundle" />
-      <command text="s doctrine:schema:update --force " />
-      <command text="s doctrine:generate:entities AuthenticatorApplicationsUsersBundle" />
-      <command text="s doctrine:schema:update --force " />
       <command text="s cache:clear" />
       <command text="s clients:api-client:generate_header_hash --secret_key=Ggjdjwo22820jkxkjnkgshKKHhs" />
       <command text="s cache:clear --env=prod" />
@@ -102,6 +147,15 @@
       <command text="s cache:clear --env=prod" />
       <command text="s clients:api-client:generate_header_hash --secret_key=Ggjdjwo22820jkxkjnkgshKKHhs" />
       <command text="s doctrine:schema:update --force " />
+      <command text="s doctrine:generate:form AuthenticatorApplicationsUsersBundle:IndividualPersonalData" />
+      <command text="s assets:install web" />
+      <command text="s cache:clear" />
+      <command text="s doctrine:generate:crud AuthenticatorApplicationsUsersBundle:IndividualPersonalData" />
+      <command text="s doctrine:generate:crud --entity=&quot;AuthenticatorApplicationsUsersBundle:IndividualPersonalData&quot;" />
+      <command text="s doctrine:generate:crud --entity=&quot;Authenticator\ApplicationsUsersBundle\Entity\IndividualPersonalData&quot;" />
+      <command text="s doctrine:generate:crud --entity=Authenticator\ApplicationsUsersBundle\Entity\IndividualPersonalData" />
+      <command text="s doctrine:generate:crud --entity=AuthenticatorApplicationsUsersBundle:IndividualPersonalData" />
+      <command text="s clients:api-client:generate_header_hash --secret_key=Ggjdjwo22820jkxkjnkgshKKHhs" />
     </commandsHistory>
   </component>
   <component name="Git.Settings">
@@ -122,7 +176,6 @@
         <option value="$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/AuthenticatorApiSecurityBundle.php" />
         <option value="$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/Factory/AuthApiFactory.php" />
         <option value="$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/Resources/config/services.yml" />
-        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/Token/ApiClientToken.php" />
         <option value="$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/Command/CreateApiClientCommand.php" />
         <option value="$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/Tests/AuthenticatorListenerTest.php" />
@@ -132,14 +185,11 @@
         <option value="$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/Logger/LoggingInterface.php" />
         <option value="$PROJECT_DIR$/app/config/config_dev.yml" />
         <option value="$PROJECT_DIR$/app/config/config_prod.yml" />
-        <option value="$PROJECT_DIR$/app/config/config.yml" />
         <option value="$PROJECT_DIR$/src/Authenticator/ApplicationsClientsBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/app/config/config_app.yml" />
         <option value="$PROJECT_DIR$/app/logs/clients_api/2014-08-28.log" />
-        <option value="$PROJECT_DIR$/app/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Exception/ApplicationsUsersException.php" />
         <option value="$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Exception/JsonContentException.php" />
-        <option value="$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/Logger/LoggerListener.php" />
         <option value="$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/Listener/ApplicationsApiListener.php" />
         <option value="$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Helper/JsonContent.php" />
         <option value="$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/Entity/Clients.php" />
@@ -148,9 +198,16 @@
         <option value="$PROJECT_DIR$/app/config/security.yml" />
         <option value="$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Entity/ApplicationsUsers.php" />
         <option value="/private/var/folders/mn/_k2jw4cx0c9brk9tt0b0wswr0000gn/T/tmpRestClientResponse7466901613402893705.json" />
-        <option value="$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Controller/ApplicationsUsersApiController.php" />
         <option value="$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Entity/IndividualPersonalData.php" />
         <option value="$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Entity/LegalEntityPersonalData.php" />
+        <option value="$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/Logger/LoggerListener.php" />
+        <option value="$PROJECT_DIR$/app/config/config.yml" />
+        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
+        <option value="$PROJECT_DIR$/app/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Form/IndividualPersonalDataType.php" />
+        <option value="$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Controller/ApplicationUsersController.php" />
+        <option value="$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Resources/views/PersonalData/edit_individual_personal_data.html.twig" />
+        <option value="$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Controller/ApplicationsUsersApiController.php" />
       </list>
     </option>
   </component>
@@ -216,7 +273,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -296,6 +352,10 @@
               <option name="myItemId" value="Resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -350,6 +410,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Helper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client_server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client_server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Authenticator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ApplicationsUsersBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Form" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -450,6 +536,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ApiSecurityBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client_server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client_server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Authenticator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ApiSecurityBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Logger" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -579,10 +691,11 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.idea" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/composer.lock" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="project.propVCSSupport.Ignored.Files" />
     <property name="options.splitter.main.proportions" value="0.3" />
@@ -593,6 +706,30 @@
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
       <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://104.131.31.78" />
+          <option name="urlPath" value="/clients/api/v1/account/personal_data/1/2/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="X-Api-Hash" />
+                <option name="value" value="ApiToken secretKeyDigest=&quot;Y2Y1ZGExNmNmYjllN2QwNjI3ODlhZWQzMTY3MWJmNTc2NjQ3MGY1YQ==&quot;, Nonce=&quot;YzQ4N2ZkNTA5ZjNjN2MzOA==&quot;, Created=&quot;2014-09-04T00:10:07+04:00&quot;" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="[{&quot;account_id&quot;:2,&quot;organisation_type&quot;:&quot;\u041e\u041e\u041e&quot;,&quot;organisation_name&quot;:&quot;\u041e\u0431\u0449\u0435\u0441\u0442\u0432\u043e \u0441 \u043e\u0440\u0433\u0430\u043d\u0438\u0447\u0435\u043d\u043d\u043e\u0439 \u043e\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u0441\u0442\u044c\u044e \&quot;\u0420\u043e\u043c\u0430\u0448\u043a\u0430\&quot;&quot;,&quot;legal_address&quot;:{&quot;zip&quot;:&quot;190000&quot;,&quot;country&quot;:&quot;\u0420\u0424&quot;,&quot;state&quot;:&quot;\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433&quot;,&quot;city&quot;:&quot;\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433&quot;,&quot;street&quot;:&quot;\u041d\u0435\u0432\u0441\u043a\u0438\u0439 \u043f\u0440.&quot;,&quot;house&quot;:1,&quot;build&quot;:1,&quot;office&quot;:1},&quot;actual_address&quot;:{&quot;zip&quot;:&quot;190000&quot;,&quot;country&quot;:&quot;\u0420\u0424&quot;,&quot;state&quot;:&quot;\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433&quot;,&quot;city&quot;:&quot;\u0421\u0430\u043d\u043a\u0442-\u041f\u0435\u0442\u0435\u0440\u0431\u0443\u0440\u0433&quot;,&quot;street&quot;:&quot;\u041d\u0435\u0432\u0441\u043a\u0438\u0439 \u043f\u0440.&quot;,&quot;house&quot;:1,&quot;build&quot;:1,&quot;office&quot;:1},&quot;email&quot;:&quot;some_one@mail.ru&quot;,&quot;phone&quot;:&quot;+7 (812) 1234567&quot;,&quot;inn&quot;:&quot;1234567890&quot;,&quot;kpp&quot;:&quot;123456789&quot;,&quot;okved&quot;:&quot;78.111&quot;,&quot;okpo&quot;:&quot;12345678&quot;,&quot;bank&quot;:{&quot;name&quot;:&quot;\u0421\u0431\u0435\u0440\u0431\u0430\u043d\u043a \u0420\u0424&quot;,&quot;bik&quot;:&quot;044525225&quot;,&quot;correspondent_account&quot;:&quot;30101810400000000225&quot;,&quot;checking_account&quot;:&quot;12345678901234567890&quot;},&quot;organisation_head&quot;:{&quot;last_name&quot;:&quot;\u0418\u0432\u0430\u043d\u043e\u0432&quot;,&quot;first_name&quot;:&quot;\u041f\u0435\u0442\u0440&quot;,&quot;middle_name&quot;:&quot;\u0421\u0438\u0434\u043e\u0440\u043e\u0432\u0438\u0447&quot;,&quot;base_activities&quot;:&quot;\u043d\u0430 \u043e\u0441\u043d\u043e\u0432\u0430\u043d\u0438\u0435 \u0443\u0441\u0442\u0430\u0432\u0430 \u2116 \u043a\u0430\u043a\u043e\u0439-\u0442\u043e \u043e\u0442 \u0442\u0430\u043a\u043e\u0433\u043e-\u0442\u043e \u0447\u0438\u0441\u043b\u0430 \u0438 \u0442.\u0434. \u0438 \u0442.\u043f.&quot;,&quot;post&quot;:&quot;\u0413\u0435\u043d\u0435\u0440\u0430\u043b\u044c\u043d\u044b\u0439 \u0434\u0438\u0440\u0435\u043a\u0442\u043e\u0440&quot;}}]" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
         <RestClientRequest>
           <option name="httpMethod" value="GET" />
           <option name="urlBase" value="http://client-server:8888" />
@@ -1534,7 +1671,11 @@
       <created>1409775283739</created>
       <updated>1409775283739</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="случайно закомитил лишний файл">
+      <created>1409775610726</created>
+      <updated>1409775610726</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1550,14 +1691,14 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32943144" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.8162252" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3513732" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.319063" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4884106" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.48679867" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294702" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.8162252" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1577,44 +1718,13 @@
     <MESSAGE value="в логер запросов от удаленных сервисов добавлено сохранение сохранение http статусов ответов." />
     <MESSAGE value="1. исправлены роуты всех действий API (введена защита от дурака. как показала практика необходимое действие.)&#10;2. введена проверка наличия параметра application_id в листнере безопасности API методов." />
     <MESSAGE value="1. добавлена логика действий в методы API контроллера.&#10;2. исправлены поля БД в entity (добавлены null-поля, уникальные индексы и внешние ключи).&#10;3. добавлены валидаторы в entity." />
-    <option name="LAST_COMMIT_MESSAGE" value="1. добавлена логика действий в методы API контроллера.&#10;2. исправлены поля БД в entity (добавлены null-поля, уникальные индексы и внешние ключи).&#10;3. добавлены валидаторы в entity." />
+    <MESSAGE value="случайно закомитил лишний файл" />
+    <option name="LAST_COMMIT_MESSAGE" value="случайно закомитил лишний файл" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Authentication/SimplePreAuthenticatorInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="10" selection-start="409" selection-end="409" vertical-scroll-proportion="0.3021978" vertical-offset="0" max-vertical-offset="546" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Authentication/Token/PreAuthenticatedToken.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="20" selection-start="587" selection-end="587" vertical-scroll-proportion="0.45845273" vertical-offset="125" max-vertical-offset="1305" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/Exception/ApiSecurityException.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="45" selection-start="196" selection-end="196" vertical-scroll-proportion="0.14340344" vertical-offset="0" max-vertical-offset="523" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Security/Core/User/UserInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="10" selection-start="1070" selection-end="1070" vertical-scroll-proportion="-0.7013233" vertical-offset="761" max-vertical-offset="1290">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Authentication/Token/TokenInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="10" selection-start="560" selection-end="560" vertical-scroll-proportion="0.39697543" vertical-offset="0" max-vertical-offset="1920" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Authentication/Token/AbstractToken.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="15" selection-start="752" selection-end="752" vertical-scroll-proportion="0.3488372" vertical-offset="30" max-vertical-offset="4230" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/DependencyInjection/Configuration.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540" />
@@ -1638,11 +1748,6 @@
     <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Event/GetResponseEvent.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="53" column="20" selection-start="1079" selection-end="1079" vertical-scroll-proportion="0.3478261" vertical-offset="506" max-vertical-offset="1065" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="28" selection-start="129" selection-end="129" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/Token/ApiClientToken.php">
@@ -1672,16 +1777,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/Entity/Repository/ClientsRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="71" selection-start="1012" selection-end="1012" vertical-scroll-proportion="-15.0" vertical-offset="90" max-vertical-offset="975">
-          <folding>
-            <element signature="e#69#98#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="28" selection-start="105" selection-end="105" vertical-scroll-proportion="0.08806262" vertical-offset="0" max-vertical-offset="1140" />
+        <state line="30" column="71" selection-start="1012" selection-end="1012" vertical-scroll-proportion="-15.0" vertical-offset="90" max-vertical-offset="975" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/config_prod.yml">
@@ -1716,9 +1812,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Validator/Context/ExecutionContextInterface.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="20" selection-start="2892" selection-end="2892" vertical-scroll-proportion="0.4820144" vertical-offset="767" max-vertical-offset="3165">
-          <folding />
-        </state>
+        <state line="79" column="20" selection-start="2892" selection-end="2892" vertical-scroll-proportion="0.4820144" vertical-offset="767" max-vertical-offset="3165" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Validator/ExecutionContextInterface.php">
@@ -1726,17 +1820,12 @@
         <state line="121" column="79" selection-start="4724" selection-end="4738" vertical-scroll-proportion="0.7900553" vertical-offset="1281" max-vertical-offset="4920" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="563" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/logs/clients_api/2014-08-29.log">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225" />
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/Logger/LoggingInterface.php">
@@ -1770,16 +1859,6 @@
         <state line="10" column="52" selection-start="210" selection-end="210" vertical-scroll-proportion="0.15151516" vertical-offset="0" max-vertical-offset="495" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/Logger/LoggerListener.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="44" selection-start="2151" selection-end="2151" vertical-scroll-proportion="-24.5" vertical-offset="357" max-vertical-offset="1200" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/Listener/ApplicationsApiListener.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="8" selection-start="1533" selection-end="1533" vertical-scroll-proportion="-1.6666666" vertical-offset="545" max-vertical-offset="1830" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Helper/JsonContent.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="9" selection-start="659" selection-end="659" vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="420">
@@ -1791,21 +1870,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/OneToOne.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="11" selection-start="1221" selection-end="1221" vertical-scroll-proportion="0.34709194" vertical-offset="100" max-vertical-offset="765">
-          <folding />
-        </state>
+        <state line="35" column="11" selection-start="1221" selection-end="1221" vertical-scroll-proportion="0.34709194" vertical-offset="100" max-vertical-offset="765" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="54" selection-start="726" selection-end="726" vertical-scroll-proportion="-0.625" vertical-offset="270" max-vertical-offset="975" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="907" selection-end="907" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="630">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/security.yml">
@@ -1851,33 +1921,100 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="73" column="63" selection-start="2372" selection-end="2372" vertical-scroll-proportion="-28.125" vertical-offset="420" max-vertical-offset="7185">
           <folding>
+            <element signature="e#64#96#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Entity/LegalEntityPersonalData.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="147" column="32" selection-start="5389" selection-end="5389" vertical-scroll-proportion="-3.75" vertical-offset="2115" max-vertical-offset="20790">
+          <folding>
+            <element signature="e#64#96#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/Listener/ApplicationsApiListener.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="8" selection-start="1533" selection-end="1533" vertical-scroll-proportion="-1.3012938" vertical-offset="1289" max-vertical-offset="1830">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Authenticator/ApiSecurityBundle/Logger/LoggerListener.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="10" selection-start="2160" selection-end="2160" vertical-scroll-proportion="-11.666667" vertical-offset="620" max-vertical-offset="1200">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="4" selection-start="152" selection-end="152" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1140">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="14" selection-start="351" selection-end="351" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Entity/IndividualPersonalData.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="54" selection-start="17" selection-end="61" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="7110">
+          <folding>
             <element signature="e#64#96#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="90" selection-start="867" selection-end="903" vertical-scroll-proportion="-7.75" vertical-offset="84" max-vertical-offset="615">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="20" selection-start="288" selection-end="288" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Form/IndividualPersonalDataType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="33" selection-start="1525" selection-end="1541" vertical-scroll-proportion="-7.125" vertical-offset="414" max-vertical-offset="1170">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Controller/ApplicationUsersController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="55" selection-start="1776" selection-end="1783" vertical-scroll-proportion="-16.583334" vertical-offset="232" max-vertical-offset="750">
+          <folding>
+            <element signature="e#159#231#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Resources/views/PersonalData/edit_individual_personal_data.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="37" selection-start="260" selection-end="260" vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="225">
+          <folding>
+            <element signature="e#23#73#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Controller/ApplicationsUsersApiController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="136" column="6" selection-start="5240" selection-end="5240" vertical-scroll-proportion="0.041666668" vertical-offset="1966" max-vertical-offset="7290">
-          <folding>
-            <element signature="e#158#218#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Entity/IndividualPersonalData.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="97" selection-end="151" vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="7110">
+        <state line="191" column="16" selection-start="7628" selection-end="7628" vertical-scroll-proportion="1.412556" vertical-offset="2325" max-vertical-offset="7320">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Authenticator/ApplicationsUsersBundle/Entity/LegalEntityPersonalData.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="147" column="32" selection-start="5389" selection-end="5389" vertical-scroll-proportion="0.16697589" vertical-offset="2115" max-vertical-offset="20790">
-          <folding>
-            <element signature="e#64#96#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
